@@ -1,0 +1,10 @@
+crie uma pasta para cada pagina do site
+
+ex: pasta "quem_somos" possui "quem_somos.html" e "quem_somos.css"
+
+
+
+src:
+	quem_somos:
+		quem_somos.html
+		quem_somos.css
