@@ -204,7 +204,82 @@ header {
 
 /* FIM HEADER*/
 
+/*MAIN*/
 
+main {
+    background-color: var(--azul);
+}
+
+.posicionamento_main_contato {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+/*FORM*/
+.forms_contato {
+    background-color: var(--branco);
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 863px;
+    height: auto;
+}
+
+.forms_contato img {
+    width: 209px;
+    height: 60px;
+}
+
+.coluna_form_contato {
+    display: flex;
+}
+
+.coluna_form_contato .input_contato {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.coluna_form_contato_mensagem .input_contato {
+    display: flex;
+    flex-direction: column;
+
+}
+
+.coluna2 {
+    display: flex;
+}
+
+.input_contato input[type=text],
+select {
+    width: 50vh;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 2px solid rgba(203, 210, 220, 0.5);
+    border-radius: 4px;
+    height: 36px;
+}
+
+.enviar_contato[type=submit] {
+    width: 100%;
+    background-color: var(--azul);
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+/*FIM FORM*/
+
+
+/*FIM MAIN*/
 
 /*FOOTER*/
 
@@ -351,9 +426,9 @@ footer {
 
 
 /*Responsivo Header e footer*/
-@media screen and (max-width: 954px){
+@media screen and (max-width: 954px) {
 
-    
+
     header {
         z-index: 1;
         position: fixed;
@@ -471,7 +546,7 @@ footer {
 }
 
 
-@media screen and (max-width: 769px){
+@media screen and (max-width: 769px) {
     .container_footer1 {
         flex-direction: column;
     }
@@ -492,7 +567,7 @@ footer {
 
 }
 
-@media screen and (max-width: 577px){
+@media screen and (max-width: 577px) {
 
     header {
         height: auto;
@@ -509,7 +584,7 @@ footer {
 
     .main-nav-list ul {
         flex-direction: column;
-            width: 100%;
+        width: 100%;
     }
 
     .main-nav-list li {
@@ -589,7 +664,7 @@ footer {
     .redes_sociais img {
         width: 50px;
     }
-    
+
 
     .container_footer2 {
         flex-direction: column-reverse;
@@ -603,7 +678,7 @@ footer {
         margin-bottom: 30px;
     }
 
-    .news p{
+    .news p {
         font-size: 16px;
     }
 
@@ -628,7 +703,7 @@ footer {
 
     }
 
-    .email_footer input[type="submit"]:focus{
+    .email_footer input[type="submit"]:focus {
 
         background-color: #61D248;
     }
@@ -663,5 +738,3 @@ footer {
 }
 
 /* Fim Responsivo Header e footer*/
-
-
