@@ -1,0 +1,115 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: 'VW Head';
+    src: url('./fonts/VWText-Regular.otf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Verdana';
+    src: url('./fonts/verdana.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+:root {
+    /* cor */
+    --azul: #001E50;
+    --verde: #61D248;
+    --cinza: #E7E7E7;
+    --branco: #FFFFFF;
+    --preto: #000000;
+
+    /*fonte*/
+
+    --vw: 'VW Head';
+    --verdana: 'Verdana';
+
+}
+
+/* MAIN */
+
+body{
+	background-color: yellow;
+}
+
+
+/* ASIDE */
+
+aside{
+    width: 20%;
+	height: 100vh;
+	float: left;
+	background-color: var(--azul);
+    color: #92929D;
+    padding: 20px;
+}
+
+.menu{
+    display: flex;
+    flex-direction: column;
+}
+
+.menu img{
+    align-self: center;
+}
+
+.menu>div{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.menu>div h2{
+    font-family: var(--verdana);
+    font-weight: 300;
+}
+
+.menu>div a{
+    text-decoration: none;
+    font-family: var(--vw);
+    font-size: 17px;
+}
+
+.link_perfil{
+    background-color: #61D248;
+    width: 80%;
+    height: 40px;
+    border-radius: 8px;
+    padding: 10px 30px;
+}
+
+.link_gerenciamento{
+    width: 80%;
+    height: 40px;
+    border-radius: 8px;
+    padding: 10px 30px;
+    color: var(--cinza);
+}
+
+
+
+
+
+
+
+.conteudo{
+    background-color: teal;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.teste{
+    width: 100px;
+    height: 100px;
+    background-color: #61D248;
+}
