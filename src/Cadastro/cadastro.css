@@ -10,8 +10,8 @@ body{
 }
 
 .cor_de_fundo{
-    width: 400px;
-    height: 300px;
+    width: 1920px;
+    height: 1024px;
     
 }
 
@@ -29,9 +29,93 @@ body{
     --verdana: 'Verdana';
 }
 
-.primeiro{
-    font-family:'VW Head' ;
-    color: var(--branco);
+.img_tex{
+    display: flex;
+    align-items: center;
 }
 
 
+
+
+.imagem{
+    width: 651.9px;
+    height: 499.2px;
+    margin: 180px;
+}
+
+.logo_inicio{
+    width: 296px;
+    height: 89px;
+    align-items: center;
+    display: flex;
+}
+
+.button_vl>a{
+    display: flex;
+    align-items: center;
+    color: var(--verde);
+    font-family: var(--vw);
+    text-decoration: none;
+    width: 80px;
+    height: 37px;
+    font-size: 30px;
+    flex-direction: row;
+    padding: 40px;
+}
+
+
+
+.button_vl{
+    display: flex;
+    flex-direction:row-reverse;
+    align-items: center;
+  
+}
+   
+
+
+
+
+.primeiro{
+    font-family:var(--vw) ;
+    color: var(--branco);
+    display: flex;
+    align-items: center;
+}
+
+.primeiro span{
+    color: var(--verde);
+}
+
+.segundo span{
+    color: var(--branco);
+    font:var(--verdana)
+    
+}
+
+
+.segundo input{
+    box-sizing:border-box;
+    width: 420px;
+    height: 50px;
+    border: 2px solid rgba(255, 255, 255, 0.8);
+    border-radius: 8px;
+    background-color: var(--azul);
+}
+
+.terceiro span{
+    color: var(--branco);
+    
+}
+
+.terceiro a{
+    color: var(--verde);
+    text-decoration: none;
+    font-family: var(--vw);
+}
+
+.text{
+    display: flex;
+    flex-direction: column;
+    gap: 80px;
+}
