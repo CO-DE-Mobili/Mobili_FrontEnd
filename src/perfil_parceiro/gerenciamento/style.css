@@ -54,8 +54,13 @@ aside{
 	justify-content: space-evenly;
 }
 
+.logo_aside{
+    width: 80%;
+}
+
 aside img{
 	align-self: center;
+    width: 30;
 }
 
 aside>div h2{
