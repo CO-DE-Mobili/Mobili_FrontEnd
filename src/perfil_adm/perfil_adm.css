@@ -125,10 +125,14 @@ aside>div a{
 	justify-content: center;
 }
 
-.rede_social>div{
+.rede_social div{
 	display: flex;
 	gap: 30px;
 	margin-left: 5px;
+}
+
+.rede_social div img{
+	height: 25px;
 }
 
 .perfil{
@@ -218,7 +222,7 @@ aside>div a{
 	border-radius: 5px;
 	border: 1px solid lightgray;
 	width: 250px;
-	height: 25px;
+	height: 30px;
 	padding-left: 10px;
 }
 

@@ -1,0 +1,37 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body{
+    background-color: #001E50;
+}
+
+.cor_de_fundo{
+    width: 400px;
+    height: 300px;
+    
+}
+
+:root{
+    /* cor */
+    --azul: #001E50;
+    --verde: #61D248;
+    --cinza: #E7E7E7;
+    --branco: #FFFFFF;
+    --preto: #000000;
+
+    /*fonte*/
+
+    --vw: 'VW Head';
+    --verdana: 'Verdana';
+}
+
+.primeiro{
+    font-family:'VW Head' ;
+    color: var(--branco);
+}
+
+
