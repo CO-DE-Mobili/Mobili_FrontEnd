@@ -6,10 +6,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Gerenciamento Parceiro</title>
     <link rel="stylesheet" href="style.css">
-
-
-
-
 </head>
 
 <body>
@@ -69,18 +65,30 @@
                 <div class="tabelaepesquisa_parceiro">
                     <div class="box_busca_gerenciamento_parceiro">
                         <div class="barra_pesquisa_gerenciamento_parceiro">
-                            <input type="text" class="barra_pesquisa_input" name="busca"
-                                placeholder="Procure suas propagandas pelo nome aqui">
-                            <div class="search_container">
+
+                            <form class="search_container">
+                                <input type="text" id="search_bar" placeholder="Busca">
+                                <a href="#">
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="search_icon" viewBox="0 0 512 512">
+                                        <path d="M221.09 64a157.09 157.09 0 10157.09 157.09A157.1 157.1 0 00221.09 64z"
+                                            fill="none" stroke="currentColor" stroke-miterlimit="10"
+                                            stroke-width="32" />
+                                        <path fill="none" stroke="currentColor" stroke-linecap="round"
+                                            stroke-miterlimit="10" stroke-width="32" d="M338.29 338.29L448 448" />
+                                    </svg>
+                                </a>
+                            </form>
+
+                            <!-- <div class="search_container">
                                 <input type="submit" value="Pesquisar" class="btn_enviar_parceiro">
-                                <a href="#"><img class="search-icon" src="http://www.endlessicons.com/wp-content/uploads/2012/12/search-icon.png"></a>
-                            </div>
+                                
+                            </div> -->
                         </div>
                     </div>
 
 
                     <table class="tabela_gerenciamento_parceiro">
-                       
+
                         <tr class="coluna coluna_responsivo_header">
                             <th>Título</th>
                             <th>Categoria</th>
@@ -89,7 +97,7 @@
                         </tr>
 
 
-                        <tr class="coluna coluna_responsivo " >
+                        <tr class="coluna coluna_responsivo ">
                             <td>Promoção</td>
                             <td>Restaurante</td>
                             <td>Santo Andre, 233</td>
@@ -151,9 +159,8 @@
                                 <a href="#">Ver mais</a>
                             </td>
                         </tr>
-
-
                     </table>
+
                 </div>
 
 
@@ -161,7 +168,7 @@
 
 
 
-                <div class="footer_tabela_gerenciamento_parceiro">
+                <div class="footer_tabela_gerenciamento_parceiro " >
                     <div class="contagem_paginacao_tabela_gerenciamento_parceiro">
                         <p>1-5 de 56</p>
                     </div>
@@ -207,18 +214,32 @@
             </section>
         </div>
 
+        <!-- <div class="botao_menu">
+            <input type="checkbox" id="input__menu-toggle" class="check">
+            <label for="input__menu-toggle" class="label-for-menu">
+                <div class="burger" onclick="mostrarMenu()" id="burguer" aria-expanded="false" aria-haspopup="true"
+                    aria-label="abrir menu">
+                    <div class="one"></div>
+                    <div class="two"></div>
+                    <div class="three"></div>
+                </div>
+            </label>
+        </div> -->
+
 
         <div class="phone">
 
             <div class="navigation">
+
+
+
                 <ul>
-                    <li class="list active">
+                    <li class="list">
                         <a href="#">
                             <span class="icon">
                                 <ion-icon name="person-outline"></ion-icon>
 
                             </span>
-                            <span class="text">Meu Perfil</span>
                         </a>
                     </li>
                     <li class="list">
@@ -226,7 +247,6 @@
                             <span class="icon">
                                 <ion-icon name="grid-outline"></ion-icon>
                             </span>
-                            <span class="text">Gerenciamento</span>
                         </a>
                     </li>
                     <li class="list">
@@ -234,7 +254,6 @@
                             <span class="icon">
                                 <ion-icon name="create-outline"></ion-icon>
                             </span>
-                            <span class="text">Publicar</span>
                         </a>
                     </li>
                     <li class="list">
@@ -243,7 +262,6 @@
                                 <ion-icon name="settings-outline"></ion-icon>
 
                             </span>
-                            <span class="text">Configuracoes</span>
                         </a>
                     </li>
                     <li class="list">
@@ -251,7 +269,6 @@
                             <span class="icon">
                                 <ion-icon name="exit-outline"></ion-icon>
                             </span>
-                            <span class="text">Sair</span>
                         </a>
                     </li>
                     <div class="indicator"></div>
