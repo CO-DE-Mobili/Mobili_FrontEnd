@@ -35,13 +35,13 @@ body {
     gap: 70px
 }
 
-.ilustracao{
+.ilustracao {
     height: 400px;
 }
 
 
 
-main{
+main {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -50,9 +50,9 @@ main{
 }
 
 .logo_inicio {
-   
-     height: 90px;
-     padding: 10px;
+
+    height: 90px;
+    padding: 10px;
 }
 
 .button_vl>a {
@@ -64,7 +64,7 @@ main{
     height: 37px;
     font-size: 30px;
     flex-direction: row;
-   
+
 }
 
 
@@ -77,20 +77,20 @@ main{
     margin: auto;
 }
 
-.button_vl div{
+.button_vl div {
     display: flex;
     text-align: center;
     gap: 15px;
     align-self: flex-start;
 }
 
-.button_vl div a{
+.button_vl div a {
     text-decoration: none;
     color: var(--verde);
     align-self: center;
     font-size: 24px;
     font-family: var(--verdana);
-    
+
 }
 
 
@@ -118,23 +118,23 @@ main{
     font: var(--verdana);
     display: flex;
     padding: 10px;
-    
+
 }
 
-.segundo input{
+.segundo input {
     padding-left: 10px;
 }
 
-.span_a{
+.span_a {
     margin-top: 15px;
     text-align: center;
 }
 
-.span_a span{
+.span_a span {
     color: white;
 }
 
-.span_a a{
+.span_a a {
     text-decoration: none;
     color: var(--verde);
 }
@@ -147,11 +147,11 @@ main{
     border: 2px solid rgba(255, 255, 255, 0.8);
     border-radius: 4px;
     background-color: var(--azul);
-    
+
 }
 
 
-    
+
 
 
 
@@ -164,15 +164,14 @@ main{
     color: var(--verde);
     text-decoration: none;
     font-family: var(--vw);
-    
+
 }
 
-.button_cont{
-    border:  2px solid #61D248;
+.button_cont {
+    border: 2px solid #61D248;
     border-radius: 4px;
     box-sizing: border-box;
     padding: 10px 173px 10px
-    
 }
 
 .text {
@@ -180,9 +179,21 @@ main{
     flex-direction: column;
     gap: 25px;
     margin: 100px;
-    
+
 }
 
+@media screen and (max-width: 1000px) {
+    .ilustracao {
+        display: none;
+    }
+
+    .img_tex {
+        flex-direction: column;
+        display: flex;
+       
+    }
 
 
 
+
+}
