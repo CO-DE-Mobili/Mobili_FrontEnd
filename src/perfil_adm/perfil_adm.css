@@ -75,7 +75,7 @@ aside>div a{
 	gap: 15px;
 	flex-direction: column;
 	justify-content: center;
-	margin: 10px 0 250px;
+	margin: 10px 0 150px;
 }
 
 .link_perfil{
@@ -116,7 +116,7 @@ aside>div a{
 	height: 1px;
 	background-color: aliceblue;
 	border-radius: 5px;
-	margin: 30px 0 30px;
+	margin: 15px 0 15px;
 }
 
 .rede_social{
@@ -128,12 +128,17 @@ aside>div a{
 
 .rede_social nav{
 	display: flex;
-	gap: 30px;
-	margin-left: 5px;
+	justify-content: space-between;
+}
+
+.rede_social nav div{
+	width: 40%;
+	display: flex;
+	justify-content: space-between;
 }
 
 .rede_social nav img{
-	height: 25px;
+	height: 100%;
 }
 
 .perfil{
@@ -261,24 +266,40 @@ aside>div a{
 /* FIM CONTEUDO */
 
 @media screen and (max-width: 1300px){
+
+	.aside_top{
+		margin: 10px 0 120px;
+	}
+
+	.link_gerenciamento {
+		padding: 0;
+	}
+	
 	.perfil_principal form input{
 		width: 100%;
 	}
 
-	.perfil{
-		flex-direction: column;
-		gap: 12px;	
+	.rede_social{
+		text-align: center;
 	}
-}
 
-@media screen and (max-width: 1300px){
 	.rede_social nav{
-		margin-left: 0;
-		justify-content: center;
+		flex-wrap: wrap;
 	}
 	
 	.rede_social nav>div{
 		gap: 20px;
-    	display: flex;
+		justify-content: space-between;
+
+	}
+
+	.perfil{
+		flex-direction: column;
+		gap: 12px;
+		height: fit-content;	
+	}
+
+	.perfil>img{
+		width: 60px;
 	}
 }
