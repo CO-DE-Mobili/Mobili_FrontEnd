@@ -213,7 +213,7 @@ aside>div a{
 .perfil_info form>div{
 	display: flex;
 	align-items: center;
-	justify-content: space-around;
+	justify-content: space-between;
 	
 }
 
@@ -243,7 +243,6 @@ aside>div a{
 	flex-direction: column;
 	gap: 5px;
 	align-self: flex-start;
-	margin-left: 30px;
 }
 
 .form_submit label{
@@ -261,6 +260,10 @@ aside>div a{
 	font-family: var(--verdana);
 	font-size: 16px;
 	padding: 0;
+}
+
+.phone{
+	display: none;
 }
 
 /* FIM CONTEUDO */
@@ -302,4 +305,72 @@ aside>div a{
 	.perfil>img{
 		width: 60px;
 	}
+}
+
+
+@media screen and (max-width: 1000px){
+	aside{
+		display: none;
+	}
+
+	.perfil_principal{
+		justify-content: center;
+	}
+
+	.perfil_principal img{
+		width: 100px;
+	}
+
+	.conteudo{
+		position: relative;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		padding: 5% 0 5% 0;
+	}
+
+	.conteudo>img{
+		display: none;
+	}
+
+	.perfil_principal{
+		width: 80%;
+	}
+
+}
+
+@media screen and (max-width: 600px){
+	.conteudo{
+		padding: 0;
+		height: 100%;
+	}
+
+	.perfil_principal{
+		height: fit-content;
+		padding: 10px 0 90px;
+	}
+
+	.perfil_principal form>div{
+		flex-wrap: wrap;
+		justify-content: center;
+		gap: 20px;
+		align-self: center;
+		min-width: 200px;
+	}
+
+	.perfil_principal form>div>div{
+		min-width: 200px;
+	}
+
+
+	.perfil_principal img{
+		width: 75px;
+	}
+
+
+	.perfil_info input.submit_button{
+		align-self: center;
+		margin: 0;
+	}
+
 }
