@@ -224,6 +224,28 @@ input#search_bar:focus {
 }
 
 
+.limpa_input {
+    position: relative;
+    float: right;
+    top: -38px;
+    right: 19px;
+    border-radius: 100%;
+    padding: 6px;
+    width: 32px;
+    font-weight: 600;
+    color: var(--azul);
+    border: 1px solid;
+    background-color: var(--branco);
+    cursor: pointer;
+    font-family: var(--verdana);
+}
+
+.limpa_input:hover {
+    color: var(--branco);
+    background-color: var(--azul);
+
+}
+
 .conteudo_gerenciamento_parceiro {
     height: 100vh;
     display: flex;
@@ -342,6 +364,10 @@ select {
     line-height: 55px;
 }
 
+.coluna:hover {
+    background-color: #61d2481e;
+}
+
 
 .logo_coluna {
     background: url();
@@ -374,6 +400,7 @@ select {
 
 .footer_tabela_gerenciamento_parceiro {
     display: flex;
+    color: var(--azul);
 }
 
 .btn_paginacao_tabela_gerenciamento_parceiro {
@@ -412,7 +439,7 @@ select {
     background: var(--branco);
     border: 1px solid rgba(203, 210, 220, 0.5);
     box-shadow: 0px 3px 3px rgba(0, 0, 0, 0.04);
-    border-radius: 12px;
+    border-radius: 5px;
     padding: 10px;
 
 }
@@ -594,7 +621,8 @@ select {
     .sessao2_gerenciamento_parceiro {
         background-color: var(--cinza);
         height: auto;
-
+        width: 100%;
+        padding: 0;
     }
 
 
@@ -606,7 +634,7 @@ select {
         justify-content: space-between;
         align-items: center;
         height: 50px;
-        padding: 40px;
+        padding: 25px;
         font-weight: 500;
         font-size: 0.90rem;
         margin-top: -55px;
@@ -668,19 +696,30 @@ select {
         /* height: 80%; */
     }
 
-    .footer_tabela_gerenciamento_parceiro{
-        justify-content: space-around;
+    .footer_tabela_gerenciamento_parceiro {
+        justify-content: space-between;
+        width: 100%;
+        height: 0;
+        padding: 25px;
     }
 
-    .btn_paginacao_tabela_gerenciamento_parceiro{
+    .btn_paginacao_tabela_gerenciamento_parceiro {
         width: 100px;
+    }
+
+    .botoes_paginacao_parceiro {
+        width: 31%;
     }
 
 }
 
 
-@media screen and (max-width: 340px){
+@media screen and (max-width: 340px) {
     .coluna_responsivo {
         font-size: 12px;
+    }
+
+    .botoes_paginacao_parceiro {
+        width: 50%;
     }
 }
