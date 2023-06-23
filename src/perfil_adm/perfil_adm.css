@@ -222,7 +222,6 @@ aside>div a{
 	flex-direction: column;
 	gap: 5px;
 	color: var(--azul);
-	width: 40%;
 }
 
 .perfil_principal form{
@@ -237,6 +236,8 @@ aside>div a{
 	width: 250px;
 	height: 30px;
 	padding-left: 10px;
+	font-size: 18px;
+	height: 40px;
 }
 
 .form_submit{
@@ -274,12 +275,13 @@ aside>div a{
 		margin: 10px 0 120px;
 	}
 
-	.link_gerenciamento {
+	/* .link_gerenciamento {
 		padding: 0;
-	}
+	} */
 	
 	.perfil_principal form input{
 		width: 100%;
+		font-size: 14px;
 	}
 
 	.rede_social{
@@ -307,6 +309,15 @@ aside>div a{
 	}
 }
 
+@media screen and (max-width: 1050px){
+	aside div h2{
+		font-size: 23px;
+	}
+
+	.perfil_info{
+		width: 85%;
+	}
+}
 
 @media screen and (max-width: 1000px){
 	aside{
