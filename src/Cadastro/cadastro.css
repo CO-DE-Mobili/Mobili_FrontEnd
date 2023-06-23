@@ -37,6 +37,7 @@ body {
 
 .ilustracao{
     height: 400px;
+  
 }
 
 
@@ -183,6 +184,11 @@ main{
     
 }
 
+@media screen and (max-width: 768px){
+    .button_vl {
+        display: none;
+      
+}
 
 
 
