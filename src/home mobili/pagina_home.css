@@ -213,7 +213,8 @@ h2{
     text-align: center;
     font-family: var(--font1);
     color: var(--azul);
-    font-size: 25px;
+    font-size: 30px;
+    margin-top: 80PX;
 }
 
 .clientes{
@@ -225,5 +226,27 @@ h2{
 
 .imagem_1{
   border: 3px solid var(--azul);
-  border-radius: 5px;
+  border-radius: 18px;
+  padding: 22px;
+  display: flex;
+    gap: 38px;
+    flex-direction: column;
+    flex: 1;
+    max-width: 250px;
+    max-height: 250px;
+}
+
+.iconi_numero1{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;   
+}
+
+.imagem_1 img{
+    width: 50px;
+}
+
+.iconi_numero1 span{
+    color: var(--verde);
+    font-size: 40px;
 }
