@@ -794,3 +794,51 @@ footer {
 /* Fim Responsivo Header e footer*/
 
 
+
+/* Responsivo Section 1 e 2 */
+
+@media screen and (max-width: 768px){
+
+    .duvida input{
+        width: 400px;
+       
+       
+    }
+
+    .se1_suporte span{
+        font-size: 16px;
+    }
+
+    .duvida{
+        padding: 110px 0 0;
+    }
+
+    .duvida  h1{
+        font-size: 50px;
+    }
+    .cards_suporte p{
+        font-size: 13px;
+    }
+
+    .se2_suporte h2{
+        font-size: 40px;
+    }
+    .se2_suporte span{
+        font-size: 16px;
+    }
+    .card1, .card2{
+        width: 270px;
+        height: 306px;
+    }
+    .cards_suporte h3{
+        padding: 15px 0;
+        font-size: 18px;
+    }
+    .cards_suporte img{
+        width: 50px;
+    }
+
+
+
+
+}
