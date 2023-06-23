@@ -329,7 +329,6 @@ select {
 
 .tabela_gerenciamento_parceiro {
     width: 100%;
-    height: 1000px
 }
 
 
@@ -343,6 +342,10 @@ select {
     line-height: 55px;
 }
 
+
+.logo_coluna {
+    background: url();
+}
 
 
 .coluna td {
@@ -385,7 +388,7 @@ select {
     justify-content: space-between;
     align-items: center;
     height: 50px;
-    border-radius: 8px;
+    border-radius: 4px;
     padding: 20px;
 }
 
@@ -440,6 +443,12 @@ select {
 @media screen and (max-width: 955px) {
 
 
+    .conteudo_gerenciamento_parceiro {
+        margin-top: 30px;
+        justify-content: start;
+
+    }
+
     .cabecalho_gerenciamento_parceiro {
         text-align: center;
         display: flex;
@@ -449,29 +458,7 @@ select {
         width: 100%;
     }
 
-    /*MENU SANDUICHE*/
 
-    .burger {
-        cursor: pointer;
-        display: initial;
-        width: 55px;
-    }
-
-
-    .burger div {
-        background-color: var(--azul);
-        border-radius: 5px;
-        height: 8px;
-        width: 50px;
-        transition-duration: .25s;
-        transition-timing-function: cubic-bezier(.6, .13, .32, 1.46);
-    }
-
-
-    .burger .one,
-    .burger .two {
-        margin-bottom: 8px;
-    }
 
 
     aside {
@@ -484,7 +471,6 @@ select {
     }
 
     .navigation {
-        position: fixed;
         /* position: relative; */
         width: 100%;
         height: 90px;
@@ -495,7 +481,6 @@ select {
         /* border-radius: 10px; */
         /* left: 205px; */
         /* top: 0; */
-        bottom: 0;
         font-family: var(--verdana);
         backdrop-filter: blur(5px);
         display: flex;
@@ -576,26 +561,6 @@ select {
 
 
 
-    /* transicao do indicador */
-    /* .navigation ul li:nth-child(1).active~.indicator {
-        transform: translateX(calc(70px * 0));
-    }
-
-    .navigation ul li:nth-child(2).active~.indicator {
-        transform: translateX(calc(70px * 1));
-    }
-
-    .navigation ul li:nth-child(3).active~.indicator {
-        transform: translateX(calc(70px * 2));
-    }
-
-    .navigation ul li:nth-child(4).active~.indicator {
-        transform: translateX(calc(70px * 3));
-    }
-
-    .navigation ul li:nth-child(5).active~.indicator {
-        transform: translateX(calc(70px * 4));
-    } */
 
 
 
@@ -609,7 +574,7 @@ select {
 
 
     /*barra pesquisa*/
-    .search_container{
+    .search_container {
         width: 93%;
     }
 
@@ -628,13 +593,13 @@ select {
 
     .sessao2_gerenciamento_parceiro {
         background-color: var(--cinza);
+        height: auto;
 
     }
 
 
     .coluna_responsivo_header {
         background-color: var(--cinza);
-
         width: 95%;
         margin: 0 auto;
         display: flex;
@@ -645,6 +610,10 @@ select {
         font-weight: 500;
         font-size: 0.90rem;
         margin-top: -55px;
+
+
+
+
     }
 
     .coluna_responsivo {
@@ -654,18 +623,18 @@ select {
         display: flex;
         justify-content: space-between;
         align-items: center;
-        height: 50px;
-        padding: 3rem 1rem;
+        height: auto;
         margin-bottom: 0.8rem;
-        border-radius: 5px;
-        box-shadow: -2px 2px 9px #bcbec5;
         font-weight: 500;
         font-size: 0.90rem;
+
+
+        background-color: #F8F9FB;
+
+        border-radius: 4px;
+        padding: 20px;
     }
 
-    .coluna th {
-        text-align: left;
-    }
 
     .coluna td a {
 
@@ -673,7 +642,45 @@ select {
 
     }
 
-    .footer_tabela_gerenciamento_parceiro {}
 
     /*FIM TABELA*/
+}
+
+
+@media screen and (max-width: 556px) {
+
+
+    .conteudo_gerenciamento_parceiro {
+        margin-top: 30px;
+        justify-content: start;
+
+    }
+
+    .sessao2_gerenciamento_parceiro {
+        width: 98%;
+        /* border-radius: 4px; */
+        display: flex;
+        flex-direction: column;
+        /* align-items: center; */
+        justify-content: space-between;
+        /* padding: 30px; */
+        padding: 0;
+        /* height: 80%; */
+    }
+
+    .footer_tabela_gerenciamento_parceiro{
+        justify-content: space-around;
+    }
+
+    .btn_paginacao_tabela_gerenciamento_parceiro{
+        width: 100px;
+    }
+
+}
+
+
+@media screen and (max-width: 340px){
+    .coluna_responsivo {
+        font-size: 12px;
+    }
 }
