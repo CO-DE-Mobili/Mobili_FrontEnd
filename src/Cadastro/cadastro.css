@@ -32,7 +32,7 @@ body {
 .img_tex {
     display: flex;
     align-items: center;
-    gap: 70px
+  
 }
 
 .ilustracao{
@@ -95,6 +95,10 @@ main{
 }
 
 
+
+
+
+
 .primeiro {
     font-family: var(--vw);
     color: var(--branco);
@@ -143,12 +147,12 @@ main{
 
 .segundo input {
     box-sizing: border-box;
-    width: 420px;
+    width: 100%;
     height: 50px;
     border: 2px solid rgba(255, 255, 255, 0.8);
     border-radius: 4px;
     background-color: var(--azul);
-    
+    color: var(--branco);
 }
 
 
@@ -168,7 +172,7 @@ main{
     
 }
 
-.button_cont{
+form .button_cont{
     border:  2px solid #61D248;
     border-radius: 4px;
     box-sizing: border-box;
@@ -184,11 +188,34 @@ main{
     
 }
 
-@media screen and (max-width: 768px){
+@media screen and (max-width: 1300px){
+    .logo_inicio {
+        height: 70px;
+    }
+    .ilustracao {
+         height: 250px;
+    }  
+
+
+}
+@media screen and (max-width: 956px){
     .button_vl {
         display: none;
-      
 }
+}
+@media screen and (max-width: 940px){
+    .text {
+        margin: 20px;
+        
+}
+}
+@media screen and (max-width: 400px){
+    .img_tex {
+        align-items: center;
+}
+}
+
+
 
 
 
