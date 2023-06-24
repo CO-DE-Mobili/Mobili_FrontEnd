@@ -197,7 +197,7 @@ main {
 }
 
 @media screen and (max-width:1000px) {
-    .alinhamento_imagens{
+    .alinhamento_imagens {
         display: none;
     }
 
@@ -210,6 +210,38 @@ main {
 
 }
 
-@media screen and (max-width:500px){
+@media screen and (max-width:500px) {
+    .alinhamento_imagens {
+        display: none;
+    }
 
+    .bem_vindo span {
+        color: #61D248;
+        width: 280px;
+        text-align: center;
+    }
+
+    .dados_usuario form {
+        width: 85%;
+
+    }
+}
+
+.dados_usuario form div.form_checkbox {
+    font-size: 16px;
+}
+
+.dados_usuario {
+    display: flex;
+    justify-content: center;
+}
+
+.conta_cadastro{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.bem_vindo h1{
+    text-align: center;
 }
