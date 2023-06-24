@@ -176,10 +176,19 @@ h2{
     margin-top: 100px;
     font-family: var(--font1);
     text-align: left;
+    flex-direction: column;
 }
 
 .valores a{
     text-align: center;
+}
+
+/* .valores_card{
+    display: flex;
+} */
+
+.conheça_agente{
+    display: flex;
 }
 
 .credibilidade{
@@ -249,4 +258,9 @@ h2{
 .iconi_numero1 span{
     color: var(--verde);
     font-size: 40px;
+}
+
+.paginas a{
+    color: var(--azul);
+    text-decoration: none;
 }
