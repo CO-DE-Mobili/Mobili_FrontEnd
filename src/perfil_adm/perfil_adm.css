@@ -187,10 +187,10 @@ aside>div a{
 
 .conteudo{
 	/* background-color: #001e50; */
-	background-color: var(--cinza);
+	/* background-color: var(--cinza); */
 	/* background-color: #001e5080; */
 	/* background-color: #001e5060; */
-	/* background-color: #001e5040; */
+	background-color: #001e5040;
 	/* background-color: #001e5020; */
 
 	
