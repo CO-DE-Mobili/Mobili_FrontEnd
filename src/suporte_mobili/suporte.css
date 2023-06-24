@@ -797,12 +797,25 @@ footer {
 
 /* Responsivo Section 1 e 2 */
 
+@media screen and (max-width: 1130px){
+    .cards_suporte h3{
+        font-size: 20px;
+        padding: 20px 0;
+    }
+
+}
+
+
 @media screen and (max-width: 768px){
 
     .duvida input{
         width: 400px;
-       
-       
+          
+    }
+
+    .cards_suporte{
+        flex-wrap: wrap;
+        gap: 15px;
     }
 
     .se1_suporte span{
@@ -837,6 +850,60 @@ footer {
     .cards_suporte img{
         width: 50px;
     }
+
+}
+
+@media screen and (max-width: 400px){
+ 
+
+    .duvida{
+        padding: 110px 0 0;
+    }
+    
+    .posicionamento{
+        width:87%;
+    }
+    
+    .duvida h1{
+        text-align: center;
+        font-size: 40px;
+    }
+
+    .duvida input{
+        width: 300px;
+        margin-top: 20px
+    }
+ 
+    .ask{
+        padding: 20px 0 20px;
+    }
+
+    .card1, .card2 {
+        padding: 10px;
+        width: 280px;
+        height: 178px;
+
+    }
+
+    .card1 img ,.card2 img{
+        display: none;
+    }
+    .cards_suporte h3{
+        padding: 10px 0;
+        font-size: 13px;
+
+    }
+    .cards_suporte p{
+        font-size: 13px;
+    }
+
+    .cards_suporte{
+        flex-direction: column;
+        gap: 15px;
+    }
+
+
+
 
 
 
