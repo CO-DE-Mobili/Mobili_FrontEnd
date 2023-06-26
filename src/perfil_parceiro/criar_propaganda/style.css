@@ -166,11 +166,11 @@ aside>div a {
 }
 
 
-.posicionamneto_propaganda_parceiro{
+.posicionamneto_propaganda_parceiro {
     display: flex;
 }
 
-.dowload_coluna{
+.dowload_coluna {
     display: flex;
 }
 
@@ -178,27 +178,47 @@ aside>div a {
     display: flex;
     align-items: center;
     margin-bottom: 20px;
-  }
+}
 
-  .image-preview-container img {
+.image-preview-container img {
     max-width: 200px;
     height: auto;
     border: 1px solid #ccc;
     padding: 10px;
-  }
+}
 
-  .formatos-suportados {
+.formatos-suportados {
     margin-bottom: 10px;
-  }
+}
 
-  .posicionamento_inputs_parceiro{
-      display: flex;
-  }
+.posicionamento_inputs_parceiro {
+    display: flex;
+    align-items: center;
+}
 
-  .campo_parceiro{
-      display: flex;
-      flex-direction: column;
-  }
+.campo_parceiro {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.img_parcero_dowload {
+    border-radius: 10px;
+    border: 1px dashed rgba(56, 78, 183, 0.30);
+    background: #F8F8FF;
+    padding: 20px;
+}
+
+
+
+/*FORMULARIO*/
+
+.card_propaganda_parceiro {
+    background-color: var(--branco);
+    height: auto;
+}
+
+/*FIM FORMULARIO*/
 
 /* FIM MAIN*/
 
@@ -333,6 +353,4 @@ aside>div a {
 }
 
 
-@media screen and (max-width: 340px) {
-
-}
+@media screen and (max-width: 340px) {}
