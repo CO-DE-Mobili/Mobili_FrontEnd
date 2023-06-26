@@ -1,0 +1,188 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    background-color: #001E50;
+}
+
+.cor_de_fundo {
+    width: 1920px;
+    height: 1024px;
+
+}
+
+:root {
+    /* cor */
+    --azul: #001E50;
+    --verde: #61D248;
+    --cinza: #E7E7E7;
+    --branco: #FFFFFF;
+    --preto: #000000;
+
+    /*fonte*/
+
+    --vw: 'VW Head';
+    --verdana: 'Verdana';
+}
+
+.img_tex {
+    display: flex;
+    align-items: center;
+    gap: 70px
+}
+
+.ilustracao{
+    height: 400px;
+}
+
+
+
+main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    gap: 50px;
+}
+
+.logo_inicio {
+   
+     height: 90px;
+     padding: 10px;
+}
+
+.button_vl>a {
+    display: flex;
+    align-items: center;
+    color: var(--verde);
+    font-family: var(--vw);
+    text-decoration: none;
+    height: 37px;
+    font-size: 30px;
+    flex-direction: row;
+   
+}
+
+
+
+.button_vl {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    flex-direction: column;
+    margin: auto;
+}
+
+.button_vl div{
+    display: flex;
+    text-align: center;
+    gap: 15px;
+    align-self: flex-start;
+}
+
+.button_vl div a{
+    text-decoration: none;
+    color: var(--verde);
+    align-self: center;
+    font-size: 24px;
+    font-family: var(--verdana);
+    
+}
+
+
+.primeiro {
+    font-family: var(--vw);
+    color: var(--branco);
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.primeiro span {
+    color: var(--verde);
+}
+
+.segundo {
+    display: flex;
+    flex-direction: column;
+
+}
+
+.segundo span {
+    color: var(--branco);
+    font: var(--verdana);
+    display: flex;
+    padding: 10px;
+    
+}
+
+.segundo input{
+    padding-left: 10px;
+}
+
+.span_a{
+    margin-top: 15px;
+    text-align: center;
+}
+
+.span_a span{
+    color: white;
+}
+
+.span_a a{
+    text-decoration: none;
+    color: var(--verde);
+}
+
+
+.segundo input {
+    box-sizing: border-box;
+    width: 420px;
+    height: 50px;
+    border: 2px solid rgba(255, 255, 255, 0.8);
+    border-radius: 4px;
+    background-color: var(--azul);
+    
+}
+
+
+    
+
+
+
+.terceiro span {
+    color: var(--branco);
+
+}
+
+.terceiro a {
+    color: var(--verde);
+    text-decoration: none;
+    font-family: var(--vw);
+    
+}
+
+.button_cont{
+    border:  2px solid #61D248;
+    border-radius: 4px;
+    box-sizing: border-box;
+    padding: 10px 173px 10px
+    
+}
+
+.text {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    margin: 100px;
+    
+}
+
+
+
+
