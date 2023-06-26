@@ -36,7 +36,7 @@
 /* MAIN */
 
 body{
-	/* background-color: teal; */
+	background-color: var(--cinza);
 }
 
 
@@ -277,7 +277,6 @@ aside>div a{
 	color: orange;
 	border: 2px solid orange;
 	background-color: white;
-	margin-left: 29px;
 	width: 150px;
 	height: 40px;
 	font-family: var(--verdana);
