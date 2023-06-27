@@ -293,6 +293,7 @@ main {
     padding: 12px 20px;
     display: inline-block;
     border-radius: 4px;
+    resize: none;
 }
 
 .input_contato input[type=text],
@@ -469,12 +470,20 @@ select {
         margin: 0;
     }
 
+
+    .forms_contato img{
+        display: none;
+    }
+
     .forms_contato {
         margin-top: 0px;
         padding: 20px;
         height: auto;
         display: initial;
         margin-top: 330px;
+        background-color: var(--azul);
+        color: var(--branco);
+        width: 100%;
     }
 
     .input_contato {
@@ -488,6 +497,10 @@ select {
 
     .coluna_form_contato_mensagem {
         margin: 0;
+    }
+
+    .enviar_contato[type=submit]{
+        background-color: var(--verde);
     }
 
     .ilustra1_contato, .ilustra2_contato {
