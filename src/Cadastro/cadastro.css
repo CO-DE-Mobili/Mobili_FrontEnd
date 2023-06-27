@@ -9,12 +9,6 @@ body {
     background-color: #001E50;
 }
 
-.cor_de_fundo {
-    width: 1920px;
-    height: 1024px;
-
-}
-
 :root {
     /* cor */
     --azul: #001E50;
@@ -47,6 +41,7 @@ main{
     justify-content: center;
     align-items: center;
     height: 100vh;
+    width: 100vw;
     gap: 50px;
 }
 
@@ -75,7 +70,7 @@ main{
     align-items: center;
     gap: 20px;
     flex-direction: column;
-    margin: auto;
+
 }
 
 .button_vl div{
@@ -122,16 +117,16 @@ main{
     color: var(--branco);
     font: var(--verdana);
     display: flex;
-    padding: 10px;
     
 }
 
 .segundo input{
     padding-left: 10px;
+    width: 100%;
 }
 
 .span_a{
-    margin-top: 15px;
+    
     text-align: center;
 }
 
@@ -147,7 +142,7 @@ main{
 
 .segundo input {
     box-sizing: border-box;
-    width: 100%;
+    width: 85%;
     height: 50px;
     border: 2px solid rgba(255, 255, 255, 0.8);
     border-radius: 4px;
@@ -180,13 +175,28 @@ form .button_cont{
     
 }
 
+form div{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
 .text {
     display: flex;
     flex-direction: column;
     gap: 25px;
-    margin: 100px;
+    
     
 }
+.botao{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+
+
 
 @media screen and (max-width: 1300px){
     .logo_inicio {
@@ -206,13 +216,26 @@ form .button_cont{
 @media screen and (max-width: 940px){
     .text {
         margin: 20px;
-        
+        gap: 18px; 
 }
 }
-@media screen and (max-width: 400px){
+@media screen and (max-width: 500px){
     .img_tex {
         align-items: center;
-}
+        justify-content: center;
+    }
+
+    .text{
+        height: 100vh;
+        width: 100vw;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .segundo input{
+        width: 100%;
+    }
 }
 
 
