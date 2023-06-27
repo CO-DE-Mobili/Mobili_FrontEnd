@@ -36,16 +36,23 @@
 /* MAIN */
 
 body{
-	background-color: var(--cinza);
+	background-color: #BFC6D3;
+}
+
+main{
+	display: flex;
+	justify-content: flex-end;
 }
 
 
 /* ASIDE */
 
 aside{
+	position: fixed;
+	left: 0;
 	width: 20%;
 	height: 100vh;
-	float: left;
+	/* float: left; */
 	background-color: var(--azul);
 	color: #92929D;
 	padding: 20px;
@@ -190,15 +197,15 @@ aside>div a{
 	/* background-color: var(--cinza); */
 	/* background-color: #001e5080; */
 	/* background-color: #001e5060; */
-	background-color: #001e5040;
+	/* background-color: #BFC6D3; */
 	/* background-color: #001e5020; */
 
-	
 	height: 100vh;
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
 	padding: 5% 0 5% 5%;
+	width: 80%;
 }
 
 .conteudo img{
@@ -254,11 +261,11 @@ aside>div a{
 
 .perfil_principal form input{
 	border-radius: 5px;
-	border: 1px solid lightgray;
+	border: 2px solid rgba(203, 210, 220, 0.5);
 	width: 250px;
 	height: 30px;
 	padding-left: 10px;
-	font-size: 18px;
+	font-size: 15px;
 	height: 40px;
 }
 
@@ -291,7 +298,6 @@ aside>div a{
 /* FIM CONTEUDO */
 
 @media screen and (max-width: 1300px){
-
 	.aside_top{
 		margin: 10px 0 120px;
 	}
@@ -341,12 +347,19 @@ aside>div a{
 }
 
 @media screen and (max-width: 1000px){
+	main{
+		justify-content: center;
+
+	}
+
 	aside{
 		display: none;
 	}
 
 	.perfil_principal{
 		justify-content: center;
+		min-width: 450px;
+		width: 80%;
 	}
 
 	.perfil_principal img{
@@ -364,11 +377,6 @@ aside>div a{
 	.conteudo>img{
 		display: none;
 	}
-
-	.perfil_principal{
-		width: 80%;
-	}
-
 }
 
 @media screen and (max-width: 600px){
@@ -379,6 +387,7 @@ aside>div a{
 
 	.perfil_principal{
 		height: fit-content;
+		min-width: 250px;
 		padding: 10px 0 90px;
 	}
 
