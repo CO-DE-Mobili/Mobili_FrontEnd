@@ -220,13 +220,13 @@ header {
     margin: 0 auto;
     width: 100%;
     height: 320px;
-    padding: 50px 0 0 ;
+    padding: 60px 0;
     
 }
 
 .duvida input{
     margin-top: 30px;
-    width: 900px;
+    width: 80%;
     height: 30px;
     border-radius: 6px;
     background-color: var(--azul);
@@ -486,6 +486,10 @@ footer {
     header {
         z-index: 1;
         position: fixed;
+    }
+
+    .se1_suporte{
+        padding-top: 90px;
     }
 
     .menu img {
@@ -798,10 +802,26 @@ footer {
 /* Responsivo Section 1 e 2 */
 
 @media screen and (max-width: 1130px){
+    .duvida{
+        padding: 70px 0;
+        height: auto;
+    }
+
     .cards_suporte h3{
         font-size: 20px;
         padding: 20px 0;
     }
+    .card1, .card2 p{
+        font-size: 15px;
+
+    }
+    .card1, .card2{
+        width: 320px;
+    }
+    
+
+    
+
 
 }
 
@@ -810,6 +830,7 @@ footer {
 
     .duvida input{
         width: 400px;
+        margin-top: 15px;
           
     }
 
@@ -823,11 +844,13 @@ footer {
     }
 
     .duvida{
-        padding: 110px 0 0;
+        padding: 60px 0 ;
+        height: auto;
     }
 
     .duvida  h1{
-        font-size: 50px;
+        font-size: 45px;
+        text-align: center;
     }
     .cards_suporte p{
         font-size: 13px;
@@ -857,7 +880,7 @@ footer {
  
 
     .duvida{
-        padding: 110px 0 0;
+        padding: 50px 0 ;
     }
     
     .posicionamento{
@@ -900,6 +923,7 @@ footer {
     .cards_suporte{
         flex-direction: column;
         gap: 15px;
+        align-items: center;
     }
 
 
