@@ -453,6 +453,7 @@ aside>div a {
 .phone {
     display: none;
 }
+
 /*FIM ESCONDENDO MENU RESPONSIVO*/
 
 @media screen and (max-width: 955px) {
