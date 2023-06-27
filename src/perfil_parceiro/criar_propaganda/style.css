@@ -32,6 +32,8 @@ body {
     --cinza: #E7E7E7;
     --branco: #FFFFFF;
     --preto: #000000;
+    --vermelho: #DC2626;
+    --hoverBotaoVerde: #489f35;
 
     /*fonte*/
 
@@ -388,6 +390,52 @@ aside>div a {
 
 }
 
+.posicionamento_inputs_parceiro_btn{ 
+    display: flex;
+    width: 100%;
+    padding: 8px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.posicionamento_inputs_parceiro_btn .upload-button {
+    background-color: var(--verde);
+    color: var(--branco);
+    font-family: var(--vw);
+    font-size: 18px;
+    font-weight: 400;
+    letter-spacing: -0.01em;
+    border-radius: 4px;
+    padding: 9px 42px;
+    transition: 0.3s;
+    text-decoration: none;
+    cursor: pointer;
+    border:  1px solid var(--verde);
+    
+}
+
+.posicionamento_inputs_parceiro_btn .upload-button:hover{
+    background-color: var(--hoverBotaoVerde);
+}
+
+.posicionamento_inputs_parceiro_btn a{
+    color: var(--vermelho);
+    font-family: var(--vw);
+    font-size: 18px;
+    font-weight: 400;
+    letter-spacing: -0.01em;
+    border-radius: 4px;
+    padding: 9px 33px;
+    border:  1px solid var(--vermelho);
+    text-decoration: none;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.posicionamento_inputs_parceiro_btn a:hover{
+    background-color: var(--vermelho);
+    color: var(--branco);
+}
 /*FIM FORMULARIO*/
 
 /* FIM MAIN*/
@@ -508,6 +556,37 @@ aside>div a {
         margin-right: 30px;
     }
 
+
+    .ilustra_propaganda_parceiro img{
+        display: none;
+    }
+
+    .conteudo_propaganda_parceiro{
+        align-items: center;
+    }
+
+    .header_propaganda_parceiro{
+        text-align: center;
+    }
+    .posicionamneto_propaganda_parceiro{
+        width: 100%;
+        justify-content: center;
+    }
+
+    .posicionamento_inputs_parceiro{
+        flex-direction: column;
+    }
+
+    #titulo, #endereco, #valor{
+        width: 100%;
+    }
+
+    .campo_parceiro select {
+        width: auto;
+    }
+
+    
+    
 }
 
 
