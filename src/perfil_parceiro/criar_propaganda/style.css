@@ -158,6 +158,8 @@ aside>div a {
 
 /*MAIN*/
 
+/*cabecalho da pagina*/
+
 .header_propaganda_parceiro {
     color: var(--azul);
     font-family: var(--vw);
@@ -178,6 +180,9 @@ aside>div a {
     letter-spacing: -0.01em;
 }
 
+/*fim cabecalho da pagina*/
+
+
 .conteudo_propaganda_parceiro {
     display: flex;
     justify-content: center;
@@ -195,6 +200,9 @@ aside>div a {
 .ilustra_propaganda_parceiro img {
     width: 100%;
 }
+
+
+/*FORMULARIO*/
 
 .dowload_coluna {
     display: flex;
@@ -241,7 +249,17 @@ aside>div a {
     line-height: 39px;
     letter-spacing: -0.01em;
     color: var(--azul);
-    
+
+}
+
+#titulo:focus,
+#endereco:focus,
+#valor:focus,
+.campo_parceiro select:focus,
+.campo_parceiro textarea:focus {
+    color: var(--azul);
+    outline-color: var(--verde);
+    caret-color: var(--azul);
 }
 
 .campo_parceiro {
@@ -292,21 +310,10 @@ aside>div a {
 
 }
 
-#imagem {
-    background-color: var(--azul);
-    color: var(--branco);
-    font-family: var(--vw);
-    font-size: 18px;
-    font-weight: 400;
-    line-height: 39px;
-    letter-spacing: -0.01em;
-    border-radius: 4px;
-    padding: 9px 42px;
-    text-decoration: none;
-}
 
 
-/*FORMULARIO*/
+
+
 
 
 /*baixar img*/
@@ -328,9 +335,6 @@ aside>div a {
     margin: 0 auto;
     background-color: #F8F8FF;
     margin: 10px;
-
-
-
 }
 
 .drop-zone--over {
@@ -391,7 +395,8 @@ aside>div a {
 
 }
 
-.posicionamento_inputs_parceiro_btn{ 
+
+.posicionamento_inputs_parceiro_btn {
     display: flex;
     width: 100%;
     padding: 8px;
@@ -411,15 +416,15 @@ aside>div a {
     transition: 0.3s;
     text-decoration: none;
     cursor: pointer;
-    border:  1px solid var(--verde);
-    
+    border: 1px solid var(--verde);
+
 }
 
-.posicionamento_inputs_parceiro_btn .upload-button:hover{
+.posicionamento_inputs_parceiro_btn .upload-button:hover {
     background-color: var(--hoverBotaoVerde);
 }
 
-.posicionamento_inputs_parceiro_btn a{
+.posicionamento_inputs_parceiro_btn a {
     color: var(--vermelho);
     font-family: var(--vw);
     font-size: 18px;
@@ -427,16 +432,17 @@ aside>div a {
     letter-spacing: -0.01em;
     border-radius: 4px;
     padding: 9px 33px;
-    border:  1px solid var(--vermelho);
+    border: 1px solid var(--vermelho);
     text-decoration: none;
     cursor: pointer;
     transition: 0.3s;
 }
 
-.posicionamento_inputs_parceiro_btn a:hover{
+.posicionamento_inputs_parceiro_btn a:hover {
     background-color: var(--vermelho);
     color: var(--branco);
 }
+
 /*FIM FORMULARIO*/
 
 /* FIM MAIN*/
@@ -445,8 +451,7 @@ aside>div a {
 .phone {
     display: none;
 }
-
-/*MENU RESPONSIVO*/
+/*FIM ESCONDENDO MENU RESPONSIVO*/
 
 @media screen and (max-width: 955px) {
 
@@ -454,7 +459,7 @@ aside>div a {
         /* background-color: #fafafa; */
         background-color: var(--branco);
     }
-    
+
 
 
     .conteudo_gerenciamento_parceiro {
@@ -462,8 +467,6 @@ aside>div a {
         justify-content: start;
 
     }
-
-
 
     aside {
         display: none;
@@ -564,35 +567,39 @@ aside>div a {
     }
 
 
-    .card_propaganda_parceiro{
+    .card_propaganda_parceiro {
         width: 90%;
     }
-    .header_propaganda_parceiro{
+
+    .header_propaganda_parceiro {
         margin: 0;
         margin-top: 20px;
     }
-    
-    .ilustra_propaganda_parceiro img{
+
+    .ilustra_propaganda_parceiro img {
         display: none;
     }
 
-    .conteudo_propaganda_parceiro{
+    .conteudo_propaganda_parceiro {
         align-items: center;
     }
 
-    .header_propaganda_parceiro{
+    .header_propaganda_parceiro {
         text-align: center;
     }
-    .posicionamneto_propaganda_parceiro{
+
+    .posicionamneto_propaganda_parceiro {
         width: 100%;
         justify-content: center;
     }
 
-    .posicionamento_inputs_parceiro{
+    .posicionamento_inputs_parceiro {
         flex-direction: column;
     }
 
-    #titulo, #endereco, #valor{
+    #titulo,
+    #endereco,
+    #valor {
         width: 100%;
         height: 54px;
     }
@@ -602,34 +609,36 @@ aside>div a {
         height: 54px;
     }
 
-    
-    .posicionamento_inputs_parceiro_btn{
+
+    .posicionamento_inputs_parceiro_btn {
         flex-direction: column-reverse;
         padding: 10px;
     }
 
-    
-    .paiEnviar{
+
+    .paiEnviar {
         width: 100%;
     }
-    .posicionamento_inputs_parceiro_btn .upload-button{
+
+    .posicionamento_inputs_parceiro_btn .upload-button {
         height: 54px;
         width: 100%;
         margin-bottom: 20px;
     }
-    .posicionamento_inputs_parceiro_btn a{
+
+    .posicionamento_inputs_parceiro_btn a {
         border: none;
     }
 
-    .posicionamento_inputs_parceiro_btn a:hover{
+    .posicionamento_inputs_parceiro_btn a:hover {
         background-color: var(--branco);
         color: #DC2626;
     }
 
 
 
-    
-    
+
+
 }
 
 
