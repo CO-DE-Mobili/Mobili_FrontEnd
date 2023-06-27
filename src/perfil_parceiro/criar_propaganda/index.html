@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Gerenciamento Parceiro</title>
     <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Material+Icons|Material+Icons+Outlined" rel="stylesheet">
 </head>
 
 <body>
@@ -97,14 +98,16 @@
 
             <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
             <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
-            <script src="./js/script.js"></script>
         </div>
 
 
 
         <div class="conteudo_propaganda_parceiro">
-            <h1>Nova Propaganda</h1>
-            <p>Crie uma propaganda</p>
+
+            <div class="header_propaganda_parceiro">
+                <h1>Nova Propaganda</h1>
+                <p>Crie uma propaganda</p>
+            </div>
 
 
             <div class="posicionamneto_propaganda_parceiro">
@@ -117,17 +120,16 @@
                 <div class="card_propaganda_parceiro">
 
                     <form>
-                        <div class="posicionamento_inputs_parceiro">
-                            <div class="campo_parceiro img_parcero_dowload">
-                                <img src="./img/cloud.svg" alt="">
-                                <p>Formatos suportados png</p>
-                            </div>
-                            <input type="file" id="imagem" name="imagem" accept="image/*">
+                        <div class="drop-zone">
+                            <span class="drop-zone__prompt">
+                                <img src="./img/cloud.svg" alt="" srcset=""> <br> <br>
+                                Solte o arquivo aqui ou clique para fazer upload</span>
+
+                            <input type="file" name="myFile" class="drop-zone__input">
                         </div>
 
 
                         <div class="posicionamento_inputs_parceiro">
-
                             <div class="campo_parceiro">
                                 <label for="titulo">Título:</label>
                                 <input type="text" id="titulo" name="titulo">
@@ -171,10 +173,10 @@
 
 
                         <div class="posicionamento_inputs_parceiro">
-                            <a href="">Cancelar</a>
-                            <div>
-                                <input type="submit" value="Enviar">
+                            <input type="submit" value="Enviar" class="upload-button">
 
+                            <div>
+                                <a href="">Cancelar</a>
                             </div>
                         </div>
 
@@ -184,6 +186,9 @@
 
 
             </div>
+
+            <script src="./js/script.js"></script>
+
         </div>
 
 
