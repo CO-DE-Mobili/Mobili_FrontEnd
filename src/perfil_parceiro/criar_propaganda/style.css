@@ -308,6 +308,8 @@ aside>div a {
     letter-spacing: -0.01em;
     color: var(--azul);
 
+    /*tirar aquele balao que estica a descrição*/
+    resize: none;
 }
 
 
