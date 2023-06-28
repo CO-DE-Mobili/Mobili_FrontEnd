@@ -67,7 +67,6 @@ main a {
     color: var(--branco);
     justify-content: center;
 
-
 }
 
 main {
@@ -91,6 +90,7 @@ main {
 
 .ilustracao {
     height: 475px;
+     
 }
 
 .bem_vindo {
@@ -114,7 +114,6 @@ main {
     flex-direction: column;
     width: 400px;
     gap: 20px;
-
 
 }
 
@@ -206,7 +205,6 @@ main {
         width: 280px;
 
     }
-
 
 }
 
