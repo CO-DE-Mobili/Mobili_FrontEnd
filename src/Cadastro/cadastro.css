@@ -9,12 +9,6 @@ body {
     background-color: #001E50;
 }
 
-.cor_de_fundo {
-    width: 1920px;
-    height: 1024px;
-
-}
-
 :root {
     /* cor */
     --azul: #001E50;
@@ -29,33 +23,36 @@ body {
     --verdana: 'Verdana';
 }
 
-.img_tex {
+section {
     display: flex;
     align-items: center;
-    gap: 70px
+    justify-content: space-around;
+    width: 80%;
 }
 
-.ilustracao{
+.ilustracao {
     height: 400px;
+  
 }
 
 
 
-main{
+main {
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100vh;
-    gap: 50px;
+    width: 100vw;
 }
 
 .logo_inicio {
-   
-     height: 90px;
-     padding: 10px;
+    
+    height: 90px;
+    padding: 10px;
+    gap: 100px;
 }
 
-.button_vl>a {
+.imagens_container>a {
     display: flex;
     align-items: center;
     color: var(--verde);
@@ -64,94 +61,100 @@ main{
     height: 37px;
     font-size: 30px;
     flex-direction: row;
-   
+
 }
 
 
 
-.button_vl {
+.imagens_container {
     display: flex;
     align-items: center;
     gap: 20px;
     flex-direction: column;
-    margin: auto;
+
 }
 
-.button_vl div{
+.imagens_container div{
     display: flex;
     text-align: center;
     gap: 15px;
     align-self: flex-start;
 }
 
-.button_vl div a{
+.imagens_container div a{
     text-decoration: none;
     color: var(--verde);
     align-self: center;
     font-size: 24px;
     font-family: var(--verdana);
-    
+
 }
 
 
-.primeiro {
+
+
+
+
+.titulo {
     font-family: var(--vw);
     color: var(--branco);
     display: flex;
     align-items: center;
     flex-direction: column;
     align-items: flex-start;
+    width: 90%;
 }
 
-.primeiro span {
+.titulo span {
     color: var(--verde);
 }
 
-.segundo {
+.cadastro {
     display: flex;
     flex-direction: column;
 
 }
 
-.segundo span {
+.cadastro span {
     color: var(--branco);
     font: var(--verdana);
     display: flex;
-    padding: 10px;
     
 }
 
-.segundo input{
+.cadastro input{
     padding-left: 10px;
+    width: 100%;
 }
 
 .span_a{
-    margin-top: 15px;
+    
     text-align: center;
 }
 
-.span_a span{
+.span_a span {
     color: white;
 }
 
-.span_a a{
+.span_a a {
     text-decoration: none;
     color: var(--verde);
 }
 
 
-.segundo input {
+.cadastro input {
     box-sizing: border-box;
-    width: 420px;
+    width: 90%;
+    min-width: 300px;
     height: 50px;
     border: 2px solid rgba(255, 255, 255, 0.8);
     border-radius: 4px;
     background-color: var(--azul);
-    
+    color: var(--branco);
 }
 
 
-    
+
 
 
 
@@ -164,23 +167,103 @@ main{
     color: var(--verde);
     text-decoration: none;
     font-family: var(--vw);
-    
+
 }
 
-.button_cont{
+form{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+form .botao{
     border:  2px solid #61D248;
     border-radius: 4px;
-    box-sizing: border-box;
-    padding: 10px 173px 10px
+    
     
 }
 
-.text {
+form div{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+form div input{
+    width: 100%;
+}
+
+.conteudo_container{
     display: flex;
     flex-direction: column;
     gap: 25px;
-    margin: 100px;
+    width: 45%;
     
+}
+
+
+
+
+@media screen and (max-width: 1300px){
+    .logo_inicio {
+        height: 70px;
+    }
+    .ilustracao {
+         height: 250px;
+       
+    }  
+
+
+}
+
+@media screen and (max-width: 940px){
+    .conteudo_container {
+        margin: 20px;
+        gap: 18px; 
+        width: 45%;
+        min-width: 350px;
+}
+.imagens_container {
+    display: none;
+}
+}
+
+
+@media screen and (max-width: 500px){
+        section {
+        align-items: center;
+        justify-content: center;
+    }
+
+    .conteudo_container{
+        height: 100vh;
+        width: 100vw;
+        min-width: 300px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }   
+}
+
+@media screen and (max-width: 400px){
+    section{
+        width: 100%;
+
+    }
+
+    .cadastro input{
+        min-width: 250px;
+    }
+
+    .titulo{
+        align-items: center;
+    }
+
+    .conteudo_container{
+        align-items: center;
+
+    }
 }
 
 
