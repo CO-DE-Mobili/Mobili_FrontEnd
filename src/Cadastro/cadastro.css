@@ -23,10 +23,11 @@ body {
     --verdana: 'Verdana';
 }
 
-.img_tex {
+section {
     display: flex;
     align-items: center;
-  
+    justify-content: space-around;
+    width: 80%;
 }
 
 .ilustracao{
@@ -42,16 +43,16 @@ main{
     align-items: center;
     height: 100vh;
     width: 100vw;
-    gap: 50px;
 }
 
 .logo_inicio {
-   
-     height: 90px;
-     padding: 10px;
+    
+    height: 90px;
+    padding: 10px;
+    gap: 100px;
 }
 
-.button_vl>a {
+.imagens_container>a {
     display: flex;
     align-items: center;
     color: var(--verde);
@@ -65,7 +66,7 @@ main{
 
 
 
-.button_vl {
+.imagens_container {
     display: flex;
     align-items: center;
     gap: 20px;
@@ -73,14 +74,14 @@ main{
 
 }
 
-.button_vl div{
+.imagens_container div{
     display: flex;
     text-align: center;
     gap: 15px;
     align-self: flex-start;
 }
 
-.button_vl div a{
+.imagens_container div a{
     text-decoration: none;
     color: var(--verde);
     align-self: center;
@@ -94,33 +95,34 @@ main{
 
 
 
-.primeiro {
+.titulo {
     font-family: var(--vw);
     color: var(--branco);
     display: flex;
     align-items: center;
     flex-direction: column;
     align-items: flex-start;
+    width: 90%;
 }
 
-.primeiro span {
+.titulo span {
     color: var(--verde);
 }
 
-.segundo {
+.cadastro {
     display: flex;
     flex-direction: column;
 
 }
 
-.segundo span {
+.cadastro span {
     color: var(--branco);
     font: var(--verdana);
     display: flex;
     
 }
 
-.segundo input{
+.cadastro input{
     padding-left: 10px;
     width: 100%;
 }
@@ -140,9 +142,10 @@ main{
 }
 
 
-.segundo input {
+.cadastro input {
     box-sizing: border-box;
-    width: 85%;
+    width: 90%;
+    min-width: 300px;
     height: 50px;
     border: 2px solid rgba(255, 255, 255, 0.8);
     border-radius: 4px;
@@ -167,11 +170,16 @@ main{
     
 }
 
-form .button_cont{
+form{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+form .botao{
     border:  2px solid #61D248;
     border-radius: 4px;
-    box-sizing: border-box;
-    padding: 10px 173px 10px
+    
     
 }
 
@@ -182,17 +190,16 @@ form div{
     gap: 5px;
 }
 
-.text {
+form div input{
+    width: 100%;
+}
+
+.conteudo_container{
     display: flex;
     flex-direction: column;
     gap: 25px;
+    width: 45%;
     
-    
-}
-.botao{
-    display: flex;
-    flex-direction: column;
-    gap: 15px;
 }
 
 
@@ -204,40 +211,59 @@ form div{
     }
     .ilustracao {
          height: 250px;
+       
     }  
 
 
 }
-@media screen and (max-width: 956px){
-    .button_vl {
-        display: none;
-}
-}
+
 @media screen and (max-width: 940px){
-    .text {
+    .conteudo_container {
         margin: 20px;
         gap: 18px; 
+        width: 45%;
+        min-width: 350px;
 }
+.imagens_container {
+    display: none;
 }
+
+
 @media screen and (max-width: 500px){
-    .img_tex {
+        section {
         align-items: center;
         justify-content: center;
     }
 
-    .text{
+    .conteudo_container{
         height: 100vh;
         width: 100vw;
+        min-width: 300px;
         display: flex;
         align-items: center;
         justify-content: center;
-    }
-    
-    .segundo input{
-        width: 100%;
-    }
+    }   
 }
 
+@media screen and (max-width: 400px){
+    section{
+        width: 100%;
+
+    }
+
+    .cadastro input{
+        min-width: 250px;
+    }
+
+    .titulo{
+        align-items: center;
+    }
+
+    .conteudo_container{
+        align-items: center;
+
+    }
+}
 
 
 
