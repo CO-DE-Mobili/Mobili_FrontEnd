@@ -227,6 +227,7 @@ form div input{
 .imagens_container {
     display: none;
 }
+}
 
 
 @media screen and (max-width: 500px){
