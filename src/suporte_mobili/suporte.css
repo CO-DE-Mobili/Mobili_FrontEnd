@@ -226,11 +226,14 @@ header {
 
 .duvida input{
     margin-top: 30px;
+    padding-left: 10px;
     width: 80%;
-    height: 30px;
+    height: 40px;
     border-radius: 6px;
+    font-size: 20px;
     background-color: var(--azul);
     border-color: var(--cinza);
+    color: white;
 }
 
 .ask{
@@ -440,11 +443,12 @@ footer {
 .email_footer input[type="email"] {
     background: url(./img/submit.png) no-repeat;
     width: 411px;
-    height: 34px;
+    height: 40px;
+    font-size: 20px;
     border: 2px solid rgba(255, 255, 255, 0.8);
     border-radius: 5px;
-
-
+    padding-left: 10px;
+    color: var(--cinza);
 }
 
 .email_footer input[type="submit"] {
@@ -464,7 +468,7 @@ footer {
 }
 
 .news p {
-    color: #40567C;
+    color: var(--cinza);
     font-family: var(--verdana);
     font-style: normal;
     font-weight: 400;
@@ -925,11 +929,4 @@ footer {
         gap: 15px;
         align-items: center;
     }
-
-
-
-
-
-
-
 }
