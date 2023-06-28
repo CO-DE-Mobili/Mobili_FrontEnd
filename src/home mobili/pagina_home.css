@@ -265,12 +265,19 @@ h2{
     text-decoration: none;
 }
 
+.clientes_estao h2{
+    font-size: 30px;
+    color: var(--azul);
+    font-family: var(--font1);
+}
+
 .clientes_estao{
     display: flex;
     justify-content: center;
-    gap: 200px;
+    gap: 50px;
     align-items: center;
     flex-direction: column;
+    margin: 20px;
 }
 
 .sugestao{
@@ -282,11 +289,16 @@ h2{
 
 .iconi_numero2{
     background-color: var(--azul);
-    width: 250px;
-    height: 250px;
+    width: 340px;
     border-radius: 10px;
+    font-family: var(--font1);
+    padding: 15px;
+    display: flex;
+    gap: 15px;
+    align-items: center;
 }
 
 .iconi_numero2 img{
-    width: 100px;
+    width: 130px;
+    height: 130px;
 }
