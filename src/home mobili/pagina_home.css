@@ -171,7 +171,7 @@ h2{
 
 .valores{
     display: flex;
-    gap: 40px;
+    gap: 25px;
     font-size: 25px;
     margin-top: 100px;
     font-family: var(--font1);
@@ -194,7 +194,7 @@ h2{
 .credibilidade{
     flex-direction: column;
     display: flex;
-    gap: 50px;
+    gap: 25px;
     color: var(--azul);
 }
 
@@ -289,13 +289,24 @@ h2{
 
 .iconi_numero2{
     background-color: var(--azul);
-    width: 340px;
+    width: 387px;
     border-radius: 10px;
     font-family: var(--font1);
     padding: 15px;
     display: flex;
     gap: 15px;
     align-items: center;
+}
+
+.iconi_numero2 div{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    font-family: var(--font1)
+}
+
+.iconi_numero2 span{
+    color: var(--verde)
 }
 
 .iconi_numero2 img{
