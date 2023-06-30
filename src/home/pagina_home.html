@@ -11,23 +11,47 @@
 
 <body>
     <header>
-        <div class="elementos_header posicionamento">
 
+
+        <div class="posicionamento_header posicionamento">
             <div class="menu">
-                <img src="../geral/img_Home/logo.svg" alt="">
+                <img src="../geral/img/logo.svg" alt="">
+                <nav>
+                    <input type="checkbox" id="input__menu-toggle" class="check">
+                    <label for="input__menu-toggle" class="label-for-menu">
+                        <div class="burger" onclick="mostrarMenu()" id="burguer" aria-expanded="false"
+                            aria-haspopup="true" aria-label="abrir menu">
+                            <div class="one"></div>
+                            <div class="two"></div>
+                            <div class="three"></div>
+                        </div>
 
-                <a href="">Home</a>
-                <a href="">Quem Somos</a>
-                <a href="">Contato</a>
-                <a href="">Suporte</a>
+                    <div class="main-nav-list" id="recursos">
+                        <ul>
+                            <li><a href="#">Home</a></li>
+                            <li><a href="#">Quem somos</a></li>
+                            <li><a href="#">Contato</a></li>
+                            <li><a href="#">Suporte</a></li>
+
+                            <div class="botoes_header_2">
+                                <a class="login" href="">Login</a>
+                                <a class="cadastro" href="">Cadastro</a>
+                            </div>
+                        </ul>
+
+
+                    </div>
+                </nav>
+
+
             </div>
 
-            <div class="btn_header">
-                <a class="Login" href="">Login</a>
+            <div class="botoes_header">
+                <a class="login" href="">Login</a>
                 <a class="cadastro" href="">Cadastro</a>
             </div>
-
         </div>
+
     </header>
     <main>
         <section class="Facilitando posicionamento">
@@ -43,7 +67,7 @@
             </div>
 
             <div class="Primeira_imagem">
-                <img src="../home mobili/img/Group 1000001990.png" alt="">
+                <img src="../home/img/Group 1000001990.png" alt="">
             </div>
         </section>
         <section class="missao posicionamento">
@@ -56,7 +80,7 @@
                 </div>
             </div>
             <div class="valores card">
-                <h3>A credibilidade que todos desejam ter</h3>
+                <h2>A credibilidade que todos desejam ter</h2>
                 <div class="conheça_agente">
                     <div class="credibilidade">
 
@@ -73,7 +97,7 @@
 
         </section>
         <section class="parceiros">
-            <h4>Etapas seguintes</h4>
+            <h2>Etapas seguintes</h2>
             <div class="clientes">
                 <div class="imagem_1">
                     <div class="iconi_numero1">
@@ -126,7 +150,37 @@
         </section>
     </main>
 
-    
+    <footer>
+		<div class="redes_sociais posicionamento">
+			<img src="../geral/img/logo_footer.svg" alt="">
+			<div class="redes_sociais_links">
+				<a href=""><img src="../geral/img/gg_facebook.svg" alt=""></a>
+				<a href=""><img src="../geral/img/mdi_twitter.svg" alt=""></a>
+				<a href=""> <img src="../geral/img/formkit_linkedin.svg" alt=""></a>
+				<a href=""><img src="../geral/img/mdi_instagram.svg" alt=""></a>
+			</div>
+		</div>
+		<div class="divisoria"></div>
+		<div class="footer_conteudo">
+			<nav>
+				<span>Páginas</span>
+				<a href="">Home</a>
+				<a href="">Quem Somos</a>
+				<a href="">Contato</a>
+				<a href="">Suporte</a>
+				<a href="">Login</a>
+				<a href="">Cadastro</a>
+			</nav>
+			<div class="newsletter">
+				<h2>Junte-se ao Newsletter</h2>
+				<div class="news_email">
+					<input class="input_text" type="text" name="email" placeholder="Seu e-mail">
+					<input class="input_btn" type="submit" name="" value="Enviar">
+				</div>
+				<p>Enviaremos atualizações semanais para ajudar na gestão de suas ferramentas de maneira mais eficiente.</p>
+			</div>
+		</div>
+	</footer>
 </body>
 
 </html>
