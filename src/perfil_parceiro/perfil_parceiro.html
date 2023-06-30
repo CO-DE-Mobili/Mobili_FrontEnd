@@ -1,12 +1,14 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link rel="stylesheet" href="perfil_adm.css">
+	<link rel="stylesheet" href="perfil_parceiro.css">
 	<title>Perfil Administrador</title>
 </head>
+
 <body>
 	<main>
 		<aside>
@@ -14,14 +16,14 @@
 			<div class="aside_top">
 				<h2>Menu</h2>
 				<div class="link_perfil">
-					<a href=""> 
-						<img src="../geral/img_perfil/meu_perfil.png" alt=""> 
+					<a href="./perfil_parceiro.html">
+						<img src="../geral/img_perfil/meu_perfil.png" alt="">
 						Meu Perfil
 					</a>
 				</div>
 				<div class="link_gerenciamento" style="background-color: #001E50;">
-					<a href=""> 
-						<img src="../geral/img_perfil/gerenciamento.png" alt=""> 
+					<a href="./gerenciamento/index.html">
+						<img src="../geral/img_perfil/gerenciamento.png" alt="">
 						Gerenciamento
 					</a>
 				</div>
@@ -53,6 +55,59 @@
 				</div>
 			</div>
 		</aside>
+
+
+
+		<!-- menu responsivo -->
+		<div class="posicao_geral_perfil_parceiro"></div>
+		<div class="phone">
+			<div class="navigation">
+				<ul>
+					<li class="list">
+						<a href="#">
+							<span class="icon">
+								<ion-icon name="person-outline"></ion-icon>
+							</span>
+						</a>
+					</li>
+					<li class="list">
+						<a href="./gerenciamento/index.html">
+							<span class="icon">
+								<ion-icon name="grid-outline"></ion-icon>
+							</span>
+						</a>
+					</li>
+					<li class="list">
+						<a href="./criar_propaganda/index.html">
+							<span class="icon">
+								<ion-icon name="create-outline"></ion-icon>
+							</span>
+						</a>
+					</li>
+					<li class="list">
+						<a href="#">
+							<span class="icon">
+								<ion-icon name="settings-outline"></ion-icon>
+
+							</span>
+						</a>
+					</li>
+					<li class="list">
+						<a href="#">
+							<span class="icon">
+								<ion-icon name="exit-outline"></ion-icon>
+							</span>
+						</a>
+					</li>
+					<div class="indicator"></div>
+				</ul>
+			</div>
+
+			<script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+			<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+		</div>
+
+		<!-- fim menu responsivo -->
 		<section class="conteudo">
 			<div class="perfil_principal">
 				<img src="../geral/img_perfil/foto_perfil.svg" alt="">
@@ -70,7 +125,7 @@
 						</div>
 						<div>
 							<div>
-								<label for="email">E-Mail</label>
+								<label for="email">E-mail</label>
 								<input type="email" id="email" placeholder="eu@email.com">
 							</div>
 							<div>
@@ -91,4 +146,5 @@
 		</section>
 	</main>
 </body>
+
 </html>

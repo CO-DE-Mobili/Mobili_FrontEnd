@@ -35,15 +35,6 @@ input:-webkit-autofill {
     --cinza: #E7E7E7;
     --branco: #FFFFFF;
     --preto: #000000;
-<<<<<<< HEAD
-
-    /*fonte*/
-
-    --vw: 'VW Head';
-    --verdana: 'Verdana';
-
-}
-=======
     /*fonte*/
     --vw: 'VW Head';
     --verdana: 'Verdana';
@@ -649,4 +640,3 @@ select:focus,
 
 
 /* Fim Responsivo Header e footer*/
->>>>>>> 83bd9e3167bd9ee364259892608f127c9f5ee3c8
