@@ -90,7 +90,7 @@ main {
 
 .ilustracao {
     height: 475px;
-     
+
 }
 
 .bem_vindo {
@@ -174,8 +174,16 @@ main {
     padding: 10px;
     font-family: var(--verdana);
     text-decoration: none;
-    font-size: 25px;
+    font-size: 18px;
+    transition: 0.3s;
 
+
+}
+
+.button_cont:hover {
+    background-color: var(--verde);
+    color: var(--azul);
+    transition: 0.3s;
 }
 
 .conta_cadastro a {
@@ -195,22 +203,65 @@ main {
 
 }
 
-@media screen and (max-width:1000px) {
-    .alinhamento_imagens {
-        display: none;
-    }
-
-    .bem_vindo span {
-        color: #61D248;
-        width: 280px;
-
-    }
-
+#email,
+#senha {
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 2px solid rgba(203, 210, 220, 0.5);
+    border-radius: 4px;
+    height: 36px;
+    font-family: var(--verdana);
+    font-style: normal;
+    font-weight: 400;
+    font-size: 13.5px;
+    line-height: 39px;
+    letter-spacing: -0.01em;
+    color: var(--branco);
+    background-color: var(--azul);
 }
 
-@media screen and (max-width:500px) {
+#email:focus,
+#senha:focus {
+    color: var(--branco);
+    outline-color: var(--verde);
+    caret-color: var(--verde);
+}
+
+
+
+@media screen and (max-width:1000px) {
+
+
+
+    .conteudo {
+        width: 100%;
+    }
+
+    .dados_usuario form {
+        width: 100%;
+    }
+
+    #email,
+    #senha {
+        height: 56px;
+        width: 100%;
+
+    }
+
     .alinhamento_imagens {
         display: none;
+    }
+
+    .bem_vindo {
+        margin: 0 auto;
+    }
+
+    .button_cont {
+        height: 54px;
+        width: 100%;
+        margin-bottom: 20px;
+        padding: 13px;
     }
 
     .bem_vindo span {
@@ -223,24 +274,24 @@ main {
         width: 85%;
 
     }
-}
 
-.dados_usuario form div.form_checkbox {
-    font-size: 16px;
-}
 
-.dados_usuario {
-    display: flex;
-    justify-content: center;
-}
+    .dados_usuario form div.form_checkbox {
+        font-size: 16px;
+    }
 
-.conta_cadastro{
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-}
+    .dados_usuario {
+        display: flex;
+        justify-content: center;
+    }
 
-.bem_vindo h1{
-    text-align: center;
+    .conta_cadastro {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .bem_vindo h1 {
+        text-align: center;
+    }
 }
- 
