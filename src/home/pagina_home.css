@@ -34,7 +34,8 @@
 }
 
 .posicionamento{
-    width: 1200px;
+    width: 90%;
+    max-width: 1100px;
     margin: 0 auto;
 
 }
@@ -209,29 +210,48 @@ header {
 
 } */
 
-.Facilitando{
+.facilitando{
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     display: flex;
     justify-content: space-evenly;  
     background-color: #001E50;
     width: 100vw;
-    height: 39vw;
+    height: calc(100vh - 90px);
     align-items: center;
     gap: 50px;
     font-size: 20px;
+    padding: 50px 0 50px 0;
 }
 
-.Facilitando a{
-    font-family: var(--font1);
+.facilitando a{
+    font-family: var(--vw);
     color: var(--verde);
     margin-top: 25px;
     text-decoration: none;
-    font-size: 25px;
+    font-size: 30px;
     border: 2px solid;
     border-radius: 5px;
     text-align: center;
-    padding: 8px;
+    padding: 10px;
 }
+
+h1{
+    position: absolute;
+    left: -300px;
+    overflow: hidden;
+
+}
+
+.card{
+    background-color: var(--branco);
+    display: flex;
+    gap: 100px;
+    justify-content: space-between;
+    width: 100%;
+}
+
+
+
 
 .titulo{
     display: flex;
@@ -244,38 +264,44 @@ header {
     
 }
 
-h1{
-    position: absolute;
-    left: -300px;
-    overflow: hidden;
-
+.titulo h2{
+    color: var(--verde);
+    font-size: 38px;
 }
 
-
-
-h2{
-    font-family: var(--vw);
-    color: #61D248;
-}
-
-.card{
-    background-color: var(--branco);
-    display: flex;
-    gap: 100px;
-}
 
 .titulo p{
-    font-size: 19px;
+    font-size: 24px;
+}
+
+.titulo a{
+    font-family: var(--verdana);
+}
+
+.missao span{
+    font-family: var(--vw);
+    color: var(--verde);
+    font-size: 24px;
+    text-transform: uppercase;
 }
 
 .missao h2{
-    font-family: var(--font1);
+    font-family: var(--vw);
     color: var(--azul);
-    font-size: 40px;
-    text-align: center;
+    font-size: 38px;
+    text-align: start;
     background-color: var(--branco);
-    margin-top: 45px;
-    margin-bottom: 45px;
+}
+
+.nossos_parceiros{
+    height: 50vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.nossos_parceiros h2{
+    text-align: center;
 }
 
 .Nossa_missão{
@@ -285,7 +311,7 @@ h2{
 }
 
 .Nossa_missão img{
-    height: 100px;
+    height: 80px;
 }
 
 .valores{
@@ -313,43 +339,54 @@ h2{
 .credibilidade{
     flex-direction: column;
     display: flex;
-    gap: 25px;
+    justify-content: space-around;
     color: var(--azul);
 }
 
 .credibilidade a{
-    font-family: var(--font1);
+    font-family: var(--verdana);
     color: var(--azul);
     text-decoration: none;
     margin-top: 25px;
-    font-size: 25px;
+    font-size: 30px;
     border: 2px solid;
     border-radius: 5px;
     text-align: center;
-    width: 416px;
+    width: 100%;
     align-self: center;
+    padding: 10px;
 }
 
 
 .card h3{
-    font-family: var(--font1);
+    font-family: var(--vw);
     color: var(--azul);
     font-size: 35px;
 }
 
 .parceiros{
     text-align: center;
-    font-family: var(--font1);
     color: var(--azul);
     font-size: 30px;
-    margin-top: 80PX;
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.parceiros h2{
+    font-family: var(--vw);
+    font-weight: 300;
+}
+
+.parceiros p{
+    font-family: var(--verdana);
 }
 
 .clientes{
     display: flex;
-    justify-content: center;
-    margin-top: 25px;
-    gap: 50px;
+    justify-content: space-between;
+
 }
 
 .imagem_1{
@@ -360,8 +397,8 @@ h2{
     gap: 38px;
     flex-direction: column;
     flex: 1;
-    max-width: 250px;
-    max-height: 250px;
+    max-width: 300px;
+    max-height: 300px;
 }
 
 .iconi_numero1{
@@ -385,36 +422,47 @@ h2{
 }
 
 .clientes_estao h2{
-    font-size: 30px;
+    font-size: 38px;
     color: var(--azul);
-    font-family: var(--font1);
+    font-family: var(--vw);
 }
 
 .clientes_estao{
+    height: 70vh;
     display: flex;
-    justify-content: center;
-    gap: 50px;
+    justify-content: space-evenly;
     align-items: center;
     flex-direction: column;
-    margin: 20px;
 }
 
 .sugestao{
     display: flex;
-    gap: 100px;
-    color: var(--branco2);
+    color: var(--cinza);
+    height: 30vh;
+    width: 100%;
+    align-items: center;
+    justify-content: inherit;
+    font-family: var(--vw);
+}
 
+.imagem_2{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
 }
 
 .iconi_numero2{
     background-color: var(--azul);
-    width: 387px;
+    width: 90%;
     border-radius: 10px;
     font-family: var(--font1);
     padding: 15px;
     display: flex;
     gap: 15px;
     align-items: center;
+    font-size: 24px;
+    height: fit-content;
+    min-height: 200px;
 }
 
 .iconi_numero2 div{
@@ -554,7 +602,11 @@ footer{
 	text-align: center;
 }
 
-
+@media screen and (max-width: 1100px){
+    .facilitando img{
+        height: 300px;
+    }
+}
 
 /*Responsivo Header e footer*/
 @media screen and (max-width: 954px){
