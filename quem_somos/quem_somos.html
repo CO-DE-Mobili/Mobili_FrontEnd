@@ -6,6 +6,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="stylesheet" href="quem_somos.css">
 	<script src="../js/script2.js" defer></script>
+	<link rel="stylesheet" href="../header_footer.css">
 	<title>Quem Somos</title>
 </head>
 <body>
@@ -14,7 +15,7 @@
 
         <div class="posicionamento_header posicionamento">
             <div class="menu">
-                <img src="../../geral/img/logo.svg" alt="">
+                <img src="../geral/img_Home/logo.svg" alt="">
                 <nav>
                     <input type="checkbox" id="input__menu-toggle" class="check">
                     <label for="input__menu-toggle" class="label-for-menu">
@@ -28,10 +29,10 @@
 
                     <div class="main-nav-list" id="recursos">
                         <ul>
-                            <li><a href="#">Home</a></li>
+                            <li><a href="../index.html">Home</a></li>
                             <li><a href="#">Quem somos</a></li>
-                            <li><a href="#">Contato</a></li>
-                            <li><a href="#">Suporte</a></li>
+                            <li><a href="../contato/index.html">Contato</a></li>
+                            <li><a href="../suporte_mobili/suporte.html">Suporte</a></li>
 
                             <div class="botoes_header_2">
                                 <a class="login" href="">Login</a>
@@ -85,34 +86,44 @@
 		</section>
 	</main>
 	<footer>
-		<div class="redes_sociais posicionamento">
-			<img src="../imgs/logo_footer.svg" alt="">
-			<div class="redes_sociais_links">
-				<a href=""><img src="../imgs/icon_facebook.svg" alt=""></a>
-				<a href=""><img src="../imgs/icon_twitter.svg" alt=""></a>
-				<a href=""> <img src="../imgs/icon_linkedin.svg" alt=""></a>
-				<a href=""><img src="../imgs/icon_instagram.svg" alt=""></a>
-			</div>
-		</div>
-		<div class="divisoria"></div>
-		<div class="footer_conteudo">
-			<nav>
-				<span>Páginas</span>
-				<a href="../home/quem_somos.html">Home</a>
-				<a href="../../quem_somos/home/quem_somos.html">Quem Somos</a>
-				<a href="../../contato/index.html">Contato</a>
-				<a href="../../suporte_mobili/suporte.html">Suporte</a>
-				<a href="../../login/index.html">Login</a>
-				<a href="../../Cadastro/cadastro.html">Cadastro</a>
-			</nav>
-			<div class="newsletter">
-				<h2>Junte-se ao Newsletter</h2>
-				<div class="news_email">
-					<input class="input_text" type="text" name="email" placeholder="Seu e-mail">
-					<input class="input_btn" type="submit" name="" value="Enviar">
+		<div class="posicionamento_footer posicionamento">
+			<section class="container_footer1">
+				<img class="logo_footer" src="../suporte_mobili//img/logo_footer.svg" alt="">
+				<div class="redes_sociais">
+					<nav>
+						<a href="#"> <img src="../suporte_mobili/img/gg_facebook.svg" alt=""> </a>
+						<a href="#"> <img src="../suporte_mobili//img/mdi_twitter.svg" alt=""> </a>
+						<a href="#"> <img src="../suporte_mobili//img/formkit_linkedin.svg" alt=""> </a>
+						<a href="#"> <img src="../suporte_mobili//img/mdi_instagram.svg" alt=""> </a>
+					</nav>
 				</div>
-				<p>Enviaremos atualizações semanais para ajudar na gestão de suas ferramentas de maneira mais eficiente.</p>
-			</div>
+			</section>
+
+			<div class="linha"></div>
+			<section class="container_footer2">
+				<nav class="menu_footer">
+					<span>Paginas</span>
+					<ul>
+						<li>Home</li>
+						<li>Quem somos</li>
+						<li>Contato</li>
+						<li>Suporte</li>
+						<li>Login</li>
+						<li>Cadastro</li>
+					</ul>
+				</nav>
+
+				<div class="news">
+					<span>Junte-se à nossa newsletter</span>
+					<div class="email_footer">
+						<input type="email" name="email" id="email" placeholder="Seu e-mail">
+						<input type="submit" value="Enviar">
+					</div>
+
+					<p>Enviaremos atualizações semanais para ajudar na gestão de suas ferramentas de maneira mais
+						eficiente.</p>
+				</div>
+			</section>
 		</div>
 	</footer>
 </body>

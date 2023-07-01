@@ -226,16 +226,26 @@ header {
 
 .duvida input{
     margin-top: 30px;
-    padding-left: 10px;
+    padding: 20px 62px;
     width: 80%;
     height: 40px;
-    border-radius: 6px;
-    font-size: 20px;
+    border-radius: 4px;
+    font-size: 15px;
     background-color: var(--azul);
     border-color: var(--cinza);
     color: white;
+    border: 2px solid rgba(203, 210, 220, 0.5);
+    font-family: var(--verdana);
 }
 
+
+.search_icon {
+    position: relative;
+    /* width: 75px; */
+    top: -89px;
+    right: -408px;
+    width: 23px;
+}
 .ask{
     padding: 30px 0 45px;
     text-align: center;
