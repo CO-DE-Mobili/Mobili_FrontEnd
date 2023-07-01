@@ -61,7 +61,7 @@ main {
     height: 37px;
     font-size: 30px;
     flex-direction: row;
-
+   
 }
 
 
@@ -87,12 +87,15 @@ main {
     align-self: center;
     font-size: 24px;
     font-family: var(--verdana);
+    display: flex;
+    gap: 10px;
+}
+.voltar_seta{
+    height: 30px;
+    align-items: center;
+    display: flex;
 
 }
-
-
-
-
 
 
 .titulo {
@@ -105,7 +108,18 @@ main {
     width: 90%;
 }
 
+h1{
+    font-size: 30px;
+}
+
+span{
+    font-family: var(--vw);
+}
+
+
 .titulo span {
+    font-size: 20px;
+    font-family: var(--vw);
     color: var(--verde);
 }
 
@@ -116,9 +130,9 @@ main {
 }
 
 .cadastro span {
-    color: var(--branco);
-    font: var(--verdana);
     display: flex;
+    font-family: var(--verdana);
+    color: var(--branco);
     
 }
 
@@ -134,11 +148,15 @@ main {
 
 .span_a span {
     color: white;
+    font-family: var(--verde);
+    font-size: 20px;
 }
 
 .span_a a {
     text-decoration: none;
     color: var(--verde);
+    font-family: var(--verdana);
+    font-size: 17px;
 }
 
 
@@ -151,6 +169,8 @@ main {
     border-radius: 4px;
     background-color: var(--azul);
     color: var(--branco);
+    font-family: var(--verdana);
+  
 }
 
 
@@ -177,11 +197,22 @@ form{
 }
 
 form .botao{
-    border:  2px solid #61D248;
+    border: 2px solid #61D248;
     border-radius: 4px;
-    
-    
+    color: var(--verde);
+    font-size: 20px;
+    width: 90%;
+    min-width: 300px;
+    height: 50px;
+    font-family: var(--verdana);
+    text-align: center;
+    gap: -2px;
+    flex-direction: column;
+    display: flex;
+    text-decoration: none;
+    padding: 10px;
 }
+
 
 form div{
     width: 100%;
@@ -249,10 +280,11 @@ form div input{
 @media screen and (max-width: 400px){
     section{
         width: 100%;
-
+        min-width: 300px;
     }
 
-    .cadastro input{
+    .cadastro a{
+        width: 100%;
         min-width: 250px;
     }
 
