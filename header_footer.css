@@ -353,7 +353,7 @@ footer {
 @media screen and (max-width: 954px) {
 
     header {
-        z-index: 1;
+        z-index: 2;
         position: fixed;
     }
 
