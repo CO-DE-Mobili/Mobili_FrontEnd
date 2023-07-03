@@ -5,59 +5,68 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="./cadastro.css">
-    <link rel="shortcut icon" href="./img/icon_fav.svg" type="image/x-icon">
+    <title>Cadastro</title>
+    <link rel="stylesheet" href="../login/style.css">
+    <link rel="shortcut icon" href="../login/img/icon_fav.svg" type="image/x-icon">
 </head>
 
 <body>
     <main>
-        <section class="">
-            <div class="imagens_container">
-                <div>
-
-                    
-                    <a href="../home mobili/pagina_home.html"> 
-                        <img class="voltar_seta" src="../geral/img_cadastro/voltar.png" alt="">
-                         voltar
+        <div class="conteudo">
+            <div class="alinhamento_imagens">
+                <div class="image_voltar">
+                    <a href="../index.html" class="botao_voltar"> <img src="../geral/img_login/seta.png" alt="">
                     </a>
+
+                    <div>
+                        <a href="../index.html" class="botao_voltar"> Voltar
+                        </a>
+                    </div>
                 </div>
-
-
-                <img class="logo_inicio" src="../geral/img/logo_footer.svg" alt="">
-                <img class="ilustracao" src="../geral/img_cadastro/ilustra_cadastro.svg" alt="">
+                <!-- <img class="logo" src="../geral/img_login/logo2.png" alt=""> -->
+                <img class="ilustracao" src="./img/ilustra_cadastro.svg" alt="">
             </div>
 
-            <div class="conteudo_container">
-                <div class="titulo">
-                    <span>Bem vindo! </span>
+            <div class="pagina">
+                <div class="bem_vindo">
+                    <span>Bem vindo!</span>
                     <h1>Crie sua conta!</h1>
                 </div>
-                <div class="cadastro">
-                    
-                    <form  action="">
-                        
+                <div class="dados_usuario">
+                    <form action="">
                         <div>
-                            <span>Nome completo</span>
-                            <input type="" placeholder="eu@gmail.com">
+                            <label for="nome">Nome completo</label>
+                            <input type="nome" id="nome" value="Maria Joana da Silva">
                         </div>
 
                         <div>
-                                <span>E-mail</span>
-                                <input type="" placeholder="eu@gmail.com">
+                            <label for="email">E-mail</label>
+                            <input type="email" id="email" value="anamaria@yahoo.com">
+                        </div>
+
+                        <div class="form_checkbox">
+                            <div>
+                                <input type="checkbox" name="" id="">
+                                <a href="">Lembrar de mim</a>
+
                             </div>
 
-                        <!-- <input type="submit" class="botao" href="" value="Continuar">
-                    </input> -->
-                    <a class="botao" href="">continuar</a>
+
+                            <a href="../redefinir_senha/redefinir.html">Esqueci minha senha</a>
+                        </div>
+
+                        <div class="bc">
+                            <a class="button_cont" href="../home mobili/pagina_home.html">Enviar</a>
+                        </div>
+
                     </form>
                 </div>
-                <div class="span_a">
-                    <span>Já tem uma conta?</span>
-                    <a href="../login/index.html"> Se Logar</a>
+                <div class="conta_cadastro">
+                    <span href="">Não tem uma conta?</span>
+                    <a href="../Cadastro/cadastro.html">Cadastrar-se</a>
+
                 </div>
             </div>
-        </section>
     </main>
 </body>
 

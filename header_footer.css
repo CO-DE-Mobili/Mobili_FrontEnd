@@ -163,17 +163,19 @@ header {
     text-decoration: none;
     color: var(--azul);
     border: 2px solid var(--azul);
-    border-radius: 8px;
+    border-radius: 4px;
     font-size: 18px;
     width: 126px;
     height: 40px;
     padding: 8px;
     text-align: center;
+    transition: 0.3s;
+
 
 }
 
 .botoes_header .login:hover {
-    transition: 0.5s;
+    transition: 0.3s;
     background-color: var(--azul);
     color: var(--branco);
 
@@ -190,12 +192,15 @@ header {
     text-align: center;
     border: 2px solid var(--azul);
     background-color: var(--azul);
-    border-radius: 8px;
+    border-radius: 4px;
     margin-left: 30px;
+    transition: 0.3s;
+
 }
 
 .botoes_header .cadastro:hover {
-    transition: 0.5s;
+    transition: 0.3s;
+
     background-color: var(--branco);
     color: var(--azul);
 }
@@ -233,6 +238,10 @@ footer {
 .redes_sociais img {
     width: 30px;
     margin-right: 20px;
+}
+
+.redes_sociais a{
+    text-decoration: none;
 }
 
 .linha {

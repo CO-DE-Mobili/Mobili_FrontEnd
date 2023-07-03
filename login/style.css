@@ -39,10 +39,16 @@ body {
     justify-content: center;
 }
 
+.image_voltar a {
+    padding-left: 20px;
+}
+
 .image_voltar {
     display: flex;
     align-self: flex-start;
 }
+
+
 
 .conteudo {
 
@@ -204,6 +210,7 @@ main {
 }
 
 #email,
+#nome,
 #senha {
     padding: 12px 20px;
     margin: 8px 0;
@@ -222,6 +229,7 @@ main {
 }
 
 #email:focus,
+#nome:focus,
 #senha:focus {
     color: var(--branco);
     outline-color: var(--verde);
@@ -243,6 +251,7 @@ main {
     }
 
     #email,
+    #nome,
     #senha {
         height: 56px;
         width: 100%;

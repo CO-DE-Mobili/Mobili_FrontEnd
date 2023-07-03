@@ -206,25 +206,25 @@ header {
 /* section1 */
 
 .posicionamento_se1 {
-    
+
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
-.se1_suporte{
+.se1_suporte {
     background-color: var(--azul);
 }
- 
-.duvida{
+
+.duvida {
     margin: 0 auto;
     width: 100%;
     height: 320px;
     padding: 60px 0;
-    
+
 }
 
-.duvida input{
+.duvida input {
     margin-top: 30px;
     padding: 20px 62px;
     width: 80%;
@@ -238,6 +238,13 @@ header {
     font-family: var(--verdana);
 }
 
+.duvida input:focus {
+    color: var(--branco);
+    outline-color: var(--verde);
+    caret-color: var(--verde);
+}
+
+
 
 .search_icon {
     position: relative;
@@ -246,23 +253,24 @@ header {
     right: -408px;
     width: 23px;
 }
-.ask{
+
+.ask {
     padding: 30px 0 45px;
     text-align: center;
 
 }
 
 
-    .se1_suporte  span{
+.se1_suporte span {
     font-family: var(--vw);
     font-weight: 700;
     color: var(--verde);
     font-size: 24px;
- 
-    
+
+
 }
 
-h1{
+h1 {
     font-family: var(--vw);
     font-size: 60px;
     font-weight: 400;
@@ -271,21 +279,21 @@ h1{
 
 
 /* section 2  */
-.posicionamento_se2{
+.posicionamento_se2 {
     display: flex;
     flex-direction: column;
     align-items: center;
     width: 100%;
-    
-    
+
+
 }
 
-.se2_suporte{
+.se2_suporte {
     background-color: var(--cinza);
     padding-bottom: 30px;
 }
 
-.se2_suporte h2{
+.se2_suporte h2 {
     font-family: var(--vw);
     font-size: 60px;
     font-weight: 400;
@@ -293,7 +301,7 @@ h1{
 
 }
 
-.se2_suporte span{
+.se2_suporte span {
     display: flex;
     font-family: var(--vw);
     font-weight: 400;
@@ -301,34 +309,36 @@ h1{
     gap: 15px;
 }
 
-.se2_suporte p{
+.se2_suporte p {
     color: var(--azul);
 }
 
-.cards_suporte{
+.cards_suporte {
 
     display: flex;
     justify-content: space-evenly;
-   
+
 }
 
-.card1,.card2{
-   width: 500px;
-   height: 380px;
-   padding: 30px 20px ;
-   background-color: var(--azul);
-   border-radius: 10px;
+.card1,
+.card2 {
+    width: 500px;
+    height: 380px;
+    padding: 30px 20px;
+    background-color: var(--azul);
+    border-radius: 10px;
 
-        
-  
+
+
 }
-.cards_suporte h3{
+
+.cards_suporte h3 {
     display: flex;
     flex-direction: column;
     padding: 30px 0;
 }
 
-.cards_suporte p{
+.cards_suporte p {
 
     color: var(--branco);
     font-family: var(--verdana);
@@ -336,14 +346,15 @@ h1{
     font-size: 19px;
 }
 
-.cards_suporte h3{
+.cards_suporte h3 {
     font-family: var(--vw);
     font-weight: 400;
     font-size: 28px;
     color: var(--branco);
 
 }
-.cards_suporte img{
+
+.cards_suporte img {
     width: 70px;
 }
 
@@ -351,7 +362,7 @@ h1{
 /*FOOTER*/
 
 footer {
-    
+
     background-color: var(--azul);
 }
 
@@ -494,15 +505,15 @@ footer {
 
 
 /*Responsivo Header e footer*/
-@media screen and (max-width: 954px){
+@media screen and (max-width: 954px) {
 
-    
+
     header {
         z-index: 1;
         position: fixed;
     }
 
-    .se1_suporte{
+    .se1_suporte {
         padding-top: 90px;
     }
 
@@ -618,7 +629,7 @@ footer {
 }
 
 
-@media screen and (max-width: 769px){
+@media screen and (max-width: 769px) {
     .container_footer1 {
         flex-direction: column;
     }
@@ -639,7 +650,7 @@ footer {
 
 }
 
-@media screen and (max-width: 577px){
+@media screen and (max-width: 577px) {
 
     header {
         height: auto;
@@ -656,7 +667,7 @@ footer {
 
     .main-nav-list ul {
         flex-direction: column;
-            width: 100%;
+        width: 100%;
     }
 
     .main-nav-list li {
@@ -736,7 +747,7 @@ footer {
     .redes_sociais img {
         width: 50px;
     }
-    
+
 
     .container_footer2 {
         flex-direction: column-reverse;
@@ -750,7 +761,7 @@ footer {
         margin-bottom: 30px;
     }
 
-    .news p{
+    .news p {
         font-size: 16px;
     }
 
@@ -775,7 +786,7 @@ footer {
 
     }
 
-    .email_footer input[type="submit"]:focus{
+    .email_footer input[type="submit"]:focus {
 
         background-color: #61D248;
     }
@@ -815,126 +826,141 @@ footer {
 
 /* Responsivo Section 1 e 2 */
 
-@media screen and (max-width: 1130px){
-    .duvida{
+@media screen and (max-width: 1130px) {
+    .duvida {
         padding: 70px 0;
         height: auto;
     }
 
-    .cards_suporte h3{
+    .cards_suporte h3 {
         font-size: 20px;
         padding: 20px 0;
     }
-    .card1, .card2 p{
+
+    .card1,
+    .card2 p {
         font-size: 15px;
 
     }
-    .card1, .card2{
+
+    .card1,
+    .card2 {
         width: 320px;
     }
-    
 
-    
+
+
 
 
 }
 
 
-@media screen and (max-width: 768px){
+@media screen and (max-width: 768px) {
 
-    .duvida input{
-        width: 400px;
+    .duvida input {
+        width: 100%;
         margin-top: 15px;
-          
+        height: 56px;
+
     }
 
-    .cards_suporte{
+    .cards_suporte {
         flex-wrap: wrap;
         gap: 15px;
     }
 
-    .se1_suporte span{
-        font-size: 16px;
+    .se1_suporte span {
+        font-size: 18px;
     }
 
-    .duvida{
-        padding: 60px 0 ;
+    .duvida {
+        padding: 60px 0;
         height: auto;
     }
 
-    .duvida  h1{
+    .duvida h1 {
         font-size: 45px;
         text-align: center;
     }
-    .cards_suporte p{
-        font-size: 13px;
-    }
 
-    .se2_suporte h2{
-        font-size: 40px;
-    }
-    .se2_suporte span{
-        font-size: 16px;
-    }
-    .card1, .card2{
-        width: 270px;
-        height: 306px;
-    }
-    .cards_suporte h3{
-        padding: 15px 0;
+    .cards_suporte p {
         font-size: 18px;
     }
-    .cards_suporte img{
+
+    .se2_suporte h2 {
+        font-size: 40px;
+    }
+
+    .se2_suporte span {
+        font-size: 16px;
+    }
+
+    .card1,
+    .card2 {
+        width:100%;
+        height: auto;
+    }
+
+    .cards_suporte h3 {
+        padding: 15px 0;
+        font-size: 22px;
+    }
+
+    .cards_suporte img {
         width: 50px;
     }
 
 }
 
-@media screen and (max-width: 400px){
- 
+@media screen and (max-width: 400px) {
 
-    .duvida{
-        padding: 50px 0 ;
+
+    .duvida {
+        padding: 50px 0;
     }
-    
-    .posicionamento{
-        width:87%;
+
+    .posicionamento {
+        width: 87%;
     }
-    
-    .duvida h1{
+
+    .duvida h1 {
         text-align: center;
         font-size: 40px;
     }
 
-    .duvida input{
+    .duvida input {
         width: 300px;
         margin-top: 20px
     }
- 
-    .ask{
+
+    .ask {
         padding: 20px 0 20px;
     }
 
-    .card1, .card2 {
+    .card1,
+    .card2 {
         padding: 10px;
         width: 280px;
         height: 178px;
 
     }
 
-    .card1 img ,.card2 img{
+    .card1 img,
+    .card2 img {
         display: none;
     }
-    .cards_suporte h3{
+
+    .cards_suporte h3 {
         padding: 10px 0;
         font-size: 13px;
 
     }
-    .cards_suporte p{
+
+    .cards_suporte p {
         font-size: 13px;
     }
 
-    .cards_suporte{
+    .cards_suporte {
         flex-direction: column;
         gap: 15px;
         align-items: center;
