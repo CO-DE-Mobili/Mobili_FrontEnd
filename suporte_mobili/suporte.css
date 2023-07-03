@@ -301,13 +301,33 @@ h1 {
 
 }
 
-.se2_suporte span {
+.se2_suporte a {
     display: flex;
     font-family: var(--vw);
     font-weight: 400;
     font-size: 28px;
     gap: 15px;
+    color: var(--verde);
+    padding-left: 5px;
+    cursor: pointer;
+    text-decoration: none;
 }
+
+.se2_suporte a:hover {
+
+    color: var(--azul);
+}
+
+.contato_link {
+    display: flex;
+    align-items: center;
+    font-size: 28px;
+    font-family: var(--vw);
+    color: var(--azul);
+
+
+}
+
 
 .se2_suporte p {
     color: var(--azul);
@@ -897,7 +917,7 @@ footer {
 
     .card1,
     .card2 {
-        width:100%;
+        width: 100%;
         height: auto;
     }
 
@@ -910,59 +930,4 @@ footer {
         width: 50px;
     }
 
-}
-
-@media screen and (max-width: 400px) {
-
-
-    .duvida {
-        padding: 50px 0;
-    }
-
-    .posicionamento {
-        width: 87%;
-    }
-
-    .duvida h1 {
-        text-align: center;
-        font-size: 40px;
-    }
-
-    .duvida input {
-        width: 300px;
-        margin-top: 20px
-    }
-
-    .ask {
-        padding: 20px 0 20px;
-    }
-
-    .card1,
-    .card2 {
-        padding: 10px;
-        width: 280px;
-        height: 178px;
-
-    }
-
-    .card1 img,
-    .card2 img {
-        display: none;
-    }
-
-    .cards_suporte h3 {
-        padding: 10px 0;
-        font-size: 13px;
-
-    }
-
-    .cards_suporte p {
-        font-size: 13px;
-    }
-
-    .cards_suporte {
-        flex-direction: column;
-        gap: 15px;
-        align-items: center;
-    }
 }

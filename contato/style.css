@@ -273,7 +273,7 @@ select:focus,
         padding: 0;
         height: auto;
         display: initial;
-        margin-top: 80px;
+        margin-top: 380px;
         background-color: var(--azul);
         color: var(--branco);
         width: 100%;
@@ -318,7 +318,21 @@ select:focus,
     }
 
 
-
+    #enviar_contato{
+        width: 100%;
+        border: 2px solid var(--azul);
+        color: var(--azul);
+        background-color: var(--verde);
+        padding: 0;
+    }
+    
+    
+    #enviar_contato:hover{
+        background-color: var(--verde);
+        color: var(--azul);
+    
+    }
+    
 }
 
 @media screen and (max-width: 577px) {
