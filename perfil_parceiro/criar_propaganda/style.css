@@ -63,6 +63,10 @@ aside img {
     align-self: center;
 }
 
+aside>img{
+    height: 50px;
+}
+
 aside>div h2 {
     font-family: var(--verdana);
     font-weight: 300;
