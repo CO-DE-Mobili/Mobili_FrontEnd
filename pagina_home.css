@@ -56,7 +56,7 @@ body {
     background-color: var(--azul);
     display: flex;
     align-items: center;
-    height: 70vh;
+    height: 100vh;
 }
 
 .texto_banner_home,
