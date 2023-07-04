@@ -64,6 +64,7 @@ aside {
 
 aside img {
 	align-self: center;
+	height: 50px;
 }
 
 aside>div h2 {
@@ -129,6 +130,10 @@ aside>div a {
 	color: var(--cinza);
 }
 
+.aside_top img{
+	height: 25px;
+}
+
 .divisoria {
 	width: 100%;
 	height: 1px;
@@ -179,6 +184,14 @@ aside>div a {
 .perfil>div div {
 	display: flex;
 	flex-direction: column;
+}
+
+.perfil>div img{
+	height: 30px;
+}
+
+.perfil img{
+	height: 60px;
 }
 
 .perfil a {
