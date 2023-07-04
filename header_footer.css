@@ -549,11 +549,11 @@ footer {
         text-decoration: none;
         color: var(--branco);
         border: 2px solid var(--branco);
-        border-radius: 8px;
+        border-radius: 4px;
         font-size: 20px;
-        width: 126px;
-        height: 40px;
-        padding: 5px;
+        width: 30vh;
+        height: 56px;
+        padding: 12px;
         text-align: center;
         margin-bottom: 20px;
 
@@ -565,12 +565,12 @@ footer {
         color: var(--azul);
         font-size: 20px;
         border: 2px solid var(--branco);
-        width: 126px;
-        height: 40px;
-        padding: 5px;
+        width: 30vh;
+        height: 56px;
+        padding: 12px;
         text-align: center;
         background-color: var(--branco);
-        border-radius: 8px;
+        border-radius: 4px;
     }
 
 
