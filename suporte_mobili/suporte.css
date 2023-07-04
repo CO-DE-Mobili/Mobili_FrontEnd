@@ -526,7 +526,9 @@ footer {
 
 /*Responsivo Header e footer*/
 @media screen and (max-width: 954px) {
-
+    .contato_link {
+        flex-direction: column;
+    }
 
     header {
         z-index: 1;

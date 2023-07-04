@@ -143,6 +143,9 @@ h1 {
     align-items: center;
 }
 
+.filaParceiros_home img {
+    width: 21vh;
+}
 /*FIM SESSAO 1*/
 
 /*SESSAO 2*/
@@ -359,19 +362,28 @@ h1 {
     }
 
     .posicionamento_texto_home {
-        flex-direction: column-reverse;
+        flex-direction: column;
         justify-content: center;
         margin: 0 auto;
         margin-top: 110px;
     }
 
+    .posicionamento_texto_home img{
+        display: none;
+    }
+
     .texto_banner_home,
     .texto_sessao2_home {
 
-        margin-top: 80px;
+        margin-top: 100px;
         margin-right: 0;
     }
 
+    .texto_banner_home h2 {
+        font-size: 33px;
+        line-height: 42px;
+        margin-bottom: 20px;
+    }
     .filaCards_home {
         flex-direction: column;
         gap: 30px;
@@ -384,10 +396,21 @@ h1 {
 
     .cardDepoimento {
         width: 100%;
+        flex-direction: column;
     }
 
+    .textoDepoimento{
+        padding-left: 56px;
+        padding-right: 56px;
+        padding-bottom: 36px;
+    }
+
+    .perfil_depoimento img{
+        width: 147px;
+        margin: 0 auto;
+    }
     .filaParceiros_home img {
-        width: 120px;
+        width: 11vh;
     }
 
     header {
@@ -399,5 +422,9 @@ h1 {
         order: 2;
         margin-left: 30px;
         width: 100%;
+    }
+
+    .sessao2_home{
+        margin-top: 0;
     }
 }
