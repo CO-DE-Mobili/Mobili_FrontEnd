@@ -60,6 +60,10 @@ aside img {
     align-self: center;
 }
 
+aside>img{
+    height: 50px;
+}
+
 aside>div h2 {
     font-family: var(--verdana);
     font-weight: 300;
@@ -163,7 +167,7 @@ aside>div a {
 .perfil>div {
     width: max-content;
     display: flex;
-    gap: 20px;
+    gap: 10px;
 }
 
 .perfil div a {
